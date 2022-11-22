@@ -1,0 +1,290 @@
+@import "./variables";
+
+.projects{
+    width: 100vw;
+    height: 776px;
+    overflow: hidden;
+    position: relative;
+   .home-video{
+    width: 100vw;
+      height: 776px;
+      object-fit: cover;
+     } 
+     .project-content{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      >div:first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 38px;
+        >h1{
+          font-size: $font-size-20px;
+          text-transform: uppercase;
+        }
+        >hr{
+          width: 63px;
+          border: 1.5px solid $primary-colour;
+          background-color: $primary-colour;
+          border-radius: $border-radius-md;
+          margin-left: 48%;
+          margin-top: 0;
+        }
+      }
+      >div:last-child{
+        position: relative;
+        width: 100%;
+        height: 678px;
+        >h1{
+          font-size: 40px;
+          text-transform: uppercase;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 1px;
+          transform: rotate(-90deg);
+          width: fit-content;
+          position: absolute;
+          left:-100px;
+          top: 45%;
+          display: inline-block;
+        }
+        .each-projects{
+          margin-left: 70px;
+          width: 283px;
+          height: 628px;
+          position: relative;
+          margin-top: 23px;
+          .each-project-frontEnd,.each-project-webDesign{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            >div:nth-child(1){
+              width: 133px;
+              height: 216px;
+              grid-row:1/ span 2;
+              grid-column:1/ span 6;
+            }
+            >div:nth-child(2){
+              width: 133px;
+              height: 167px;
+              grid-column: span 6;
+            }
+            >div:nth-child(3){
+              width: 133px;
+              height: 257px;
+              grid-row: 3 /span 3;
+              grid-column:1/ span 6;
+            }
+            >div:nth-child(4){
+              width: 133px;
+              height: 196px;
+              grid-row: 2/ span 3;
+              grid-column: span 6;
+            }
+            >div:nth-child(5){
+              width: 133px;
+              height: 125px;
+              grid-row: 6;
+              grid-column: span 6;
+            }
+            >div:nth-child(6){
+              width: 133px;
+              height: 246px;
+              grid-row: 5 /span 2;
+              grid-column: span 6;
+            }
+            
+          }
+          
+          .projectSwitchTrue{
+            visibility: visible;
+            left: 0;
+            opacity: 1;
+            transition: all ease-out 0.5s;
+          }
+          .projectSwitchFalse{
+            visibility: hidden;
+            left: 100%;
+            opacity: 0;
+            transition: left ease-out 0.5s;
+            transition: visibility 0.7s;
+          }
+          .project-section{
+            border-radius: $border-radius-md;
+            position: relative;
+              >div:first-child{
+                height: 100%;
+                width: 100%;
+                border-radius: $border-radius-md;
+              }
+              >div:last-child{
+                width: 100%;
+                height: 32px;
+                position: absolute;
+                bottom: 0;
+                border-bottom-left-radius: $border-radius-md;
+                border-bottom-right-radius: $border-radius-md;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                >div{
+                  width: 50%;
+                  height: 100%;
+
+                }
+                >div:hover{
+                  transform: scale(1.6);
+                }
+              }
+          }
+          .circled-dots-project{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute; 
+            bottom: -28px;
+            >div{
+              display: flex;
+              >div{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                cursor: pointer;
+
+              }
+              >div:first-child{
+                margin-right: 11px;
+              }
+              >div:last-child{
+                margin-left: 11px;
+              }
+              .project-dot-false{
+                background-color: #707070;
+              }
+              
+            }
+          }
+        }
+      }
+     }
+}
+@media screen and (min-width:414px) {
+  .projects{
+    .project-content{
+      > div:last-child{
+        .each-projects{
+          margin-left: auto;
+          margin: 0 auto;
+          .each-project-frontEnd,.each-project-webDesign{
+            margin-top: 23px;
+          }
+          .circled-dots-project{
+            bottom: -60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:768px) {
+  .projects{
+    .project-content{
+      >div:last-child{
+        >h1{
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:992px) {
+  .projects{
+    height: 1040px;
+    .home-video{
+      height: 1040px;
+    }
+    .project-content{
+      >div:first-child{
+        h1{
+          font-size: $font-size-32px;
+          margin-top: 71px;
+        }
+        hr{
+          width: 100px;
+          border: 2px solid $primary-colour;
+          margin-left: 49%;
+        }
+      }
+      >div:last-child{
+        >h1{
+          font-size: 60px;
+        }
+        .each-projects{
+          margin-left: 302px;
+          .each-project-frontEnd,.each-project-webDesign{
+            width: fit-content;
+            >div:nth-child(1){
+              width: 260px;
+              height: 423px;
+              grid-column:1/ span 3;
+              grid-row: 1/span 3;
+              
+            }
+            >div:nth-child(2){
+              width: 260px;
+              height: 328px;
+              grid-column:4/ span 3;
+              grid-row: 1 /span 2;
+            }
+            >div:nth-child(3){
+              width: 260px;
+              height: 221px;
+              grid-column:7/ span 3;
+              grid-row: 1 /span 1;
+            }
+            >div:nth-child(4){
+              width: 260px;
+              height: 276px;
+              grid-column:1/ span 3;
+              grid-row: span 4;
+            }
+            >div:nth-child(5){
+              width: 260px;
+              height: 379px;
+              grid-column:4/ span 3;
+              grid-row:3/ span 5;
+            }
+            >div:nth-child(6){
+              width: 260px;
+              height: 483px;
+              grid-column:7/ span 3;
+              grid-row:2/ span 6;
+            }
+           
+        }
+        .project-section{
+          >div:last-child{
+            height: 71px;
+        }
+      }
+        .circled-dots-project{
+          bottom: -200px;
+          width: 804px;
+          >div{
+            >div{
+              width: 26px;
+              height: 26px;
+            }
+          }
+         
+        }
+    }
+  }
+}
+}
+}

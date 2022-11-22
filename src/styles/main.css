@@ -1,0 +1,202 @@
+/*=====================================
+                light mode
+======================================*/
+.light .background {
+  color: #000001;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.light .background .nav-firstchild-open {
+  background-color: #FBFBFB;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 1;
+  z-index: 1;
+}
+
+.light .background .about {
+  background-color: #FBFBFB;
+}
+
+.light .background .about > div:first-child {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.light .background .about > div:first-child .about-img > div:last-child {
+  -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+}
+
+.light .background .skills {
+  background-color: #000000;
+}
+
+.light .background .skills > div > div .skiils-dot {
+  background-color: #000000;
+}
+
+.light .background .skills > div > div .skills-dot {
+  background-color: white;
+}
+
+.light .background .services {
+  background-color: #FBFBFB;
+}
+
+.light .background .services > div:first-child {
+  -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+}
+
+.light .background .services > div:first-child .each-services {
+  background-color: #FAFAFA;
+  -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+
+.light .background .projects .project-dot-true {
+  background-color: #FBFBFB;
+}
+
+.light .background .projects .project-section {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.light .background .projects .project-section > div:first-child {
+  background-color: #000000;
+}
+
+.light .background .projects .project-section > div:last-child {
+  background-color: #FBFBFB;
+}
+
+@media screen and (min-width: 992px) {
+  .light .background .each-services {
+    background-color: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .light .background .each-services .hovered {
+    background-color: #FAFAFA;
+    -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+}
+
+/*=====================================
+                dark mode
+======================================*/
+.dark .background {
+  color: #E8EDDF;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.dark .background .nav-firstchild-open {
+  background-color: #000000;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 1;
+  z-index: 1;
+}
+
+.dark .background .about {
+  background-color: #000000;
+}
+
+.dark .background .about > div:first-child {
+  -webkit-box-shadow: rgba(68, 76, 79, 0.12) 0px 2px 4px 0px, rgba(50, 55, 57, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(68, 76, 79, 0.12) 0px 2px 4px 0px, rgba(50, 55, 57, 0.32) 0px 2px 16px 0px;
+}
+
+.dark .background .about > div:first-child .about-img > div:last-child {
+  -webkit-box-shadow: rgba(77, 77, 87, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(77, 77, 87, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+}
+
+.dark .background .skills {
+  background-color: #000000;
+}
+
+.dark .background .skills > div > div .skiils-dot {
+  background-color: #000000;
+}
+
+.dark .background .skills > div > div .skills-dot {
+  background-color: white;
+}
+
+.dark .background .services {
+  background-color: #000000;
+}
+
+.dark .background .services > div:first-child {
+  -webkit-box-shadow: black -1px 9px 20px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+          box-shadow: black -1px 9px 20px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+}
+
+.dark .background .services > div:first-child .each-services {
+  background-color: #333333;
+  -webkit-box-shadow: rgba(77, 77, 87, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(77, 77, 87, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+
+.dark .background .projects {
+  background-color: #000000;
+}
+
+.dark .background .projects .project-section {
+  -webkit-box-shadow: rgba(68, 76, 79, 0.12) 0px 2px 4px 0px, rgba(50, 55, 57, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(68, 76, 79, 0.12) 0px 2px 4px 0px, rgba(50, 55, 57, 0.32) 0px 2px 16px 0px;
+}
+
+.dark .background .projects .project-section > div:first-child {
+  background-color: #FBFBFB;
+}
+
+.dark .background .projects .project-section > div:last-child {
+  background-color: #000000;
+}
+
+.dark .background .projects .project-dot-true {
+  background-color: #000000;
+}
+
+@media screen and (min-width: 992px) {
+  .dark .background .each-services {
+    background-color: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .dark .background .each-services .hovered {
+    background-color: #333333;
+    -webkit-box-shadow: rgba(77, 77, 87, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+            box-shadow: rgba(77, 77, 87, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  position: absolute;
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */

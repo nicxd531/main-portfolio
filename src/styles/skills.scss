@@ -1,0 +1,136 @@
+@import "./variables";
+.skills{
+   width: 100vw;
+   height: 1000px;
+   overflow: hidden;
+   position: relative;
+   .home-video{
+      video{
+      width: 100vw;
+      height: 929px;
+      }
+     } 
+     >div{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      .sklils-intro{
+         h3{
+            font-size: $font-size-20px;
+            text-align: center;
+            margin-top: 52px;
+            text-transform: capitalize;
+            em{
+               color: $primary-colour;
+               text-decoration: none;
+               font-style: normal;
+            }
+         }
+         p{
+            font-size: 13px;
+            padding: 0 28px;
+            margin-top: 22px;
+            text-align: center;
+         }
+       }
+       .circled-dots-skills{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        >div{
+         display: flex;
+         >div{
+            width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-top: 10px;
+         }
+         >div:first-child{
+            margin-right: 11px;
+          }
+          >div:last-child{
+            margin-left: 11px;
+          }
+         .skills-dot-false{
+            background-color: #707070;
+          }
+        
+          .skiils-dot{
+            background-color: red;
+         }
+         
+        }
+      
+       }
+       >div:last-child{
+         .top-languages{
+            margin-top: 12px;
+            h2{
+               text-align: center;
+               text-transform: uppercase;
+            }
+            
+.ul {
+   margin: 0 auto;
+   color: $background-colour-dark;
+   margin-top: 13px;
+   width: fit-content;
+
+}
+
+.li {
+  background-color: $service-lightmode-fill;
+  border: 1px solid #707070;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: $border-radius-md;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  grid-column: span 6;
+  width: 160px;
+  h2{
+   width: fit-content;
+   margin-left: 20px;
+   font-size: $font-size-10px;
+   font-weight: bold;
+   text-align: center;
+  }
+  .content{
+   flex:1 0 100%;
+   p{
+      font-size: 12px;
+      
+      }
+   }
+}
+
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  img{
+   width: 100%;
+   height: 100%;
+   
+  }
+}
+
+.row {
+  width: 100%;
+  height: 8px;
+  background-color: #999;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+         }
+
+       }
+     }
+}

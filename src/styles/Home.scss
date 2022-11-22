@@ -1,0 +1,259 @@
+@import './variables';
+.Home{
+    border: 3px solid red($color: #000000);
+    height: 100vh;
+
+   .home-video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    transition: all ease-in 0.3s;
+    top: 0;
+    grid-column: $span-12;
+    left: 0;
+   }
+   .navBar{
+    grid-column: $span-12;
+    position: fixed;
+    width: 100%;
+    .nav-firstchild-close{
+        background-color: transparent;
+        transition: all ease-in 0.3s;
+        opacity: 0;
+    }
+    div:first-child{
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+    h1{
+        display: inline-block;
+        margin-left: 20px;
+        width: 80%;
+        text-transform: uppercase;
+    }
+        }
+        .menuOpen{
+            height: 185px;
+            // opacity: 1;
+            transition: all 0.3s ease-out;
+        }
+        .menuClose{
+            height: 0px;
+            // opacity: 0;
+            transition: all 0.3s ease-in;
+
+        }
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        a{
+            border-top:1px solid $line-menu-colour;
+            text-transform: capitalize;
+            padding-left: 20px;
+            height: 30px;
+            display: flex;
+           align-items: center;
+           font-size: $font-size-16px;
+           font-weight:  600;
+           cursor: pointer;
+        }
+    }
+   }
+   .intro{
+    grid-column: $span-12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+    h3{
+        font-size: $font-size-18px;
+        text-transform: capitalize;
+    }
+    h1{
+        font-size: $font-size-32px;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    h2{
+        text-transform: capitalize;
+        font-size: 26px;
+        margin-top: 0;
+        margin-top: 10px;
+    }
+   }
+   .socials{
+    grid-column: 12;
+    margin-right: 19px;
+    *{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+   }
+   .scroll-down{
+    grid-column: span 12;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 80px;
+    bottom: 0;
+    left: 45%;
+
+    hr{
+        width: 72px;
+        border-color: $primary-colour;
+        margin-bottom: 10px;
+        border-radius: $border-radius-md;
+    }
+
+   }
+   .scroll-to-top{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: $primary-colour;
+    position: fixed;
+    bottom: 5%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    z-index: 1;
+    right: 3%;
+    cursor: pointer;
+   }
+}
+@media screen and (min-width:414px) {
+    .Home{
+        .intro{
+            margin-top: 340px;
+        }
+    }
+}
+@media screen and (min-width:992px) {
+    body{
+        font-size: $font-size-20px;
+    }
+    .Home{
+        .navBar{
+            display: flex;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            
+            div:first-child h1{
+                width: fit-content;
+                text-transform: capitalize;
+                margin-left: 40px;
+            }
+            .hamburger-react{
+                display: none;
+            }
+            .menu{
+                display: flex;
+                flex-direction: row;
+                height: fit-content;
+                grid-column: 1/span 6;
+                margin-left: 360px;
+                a{
+                    font-size: $font-size-20px;
+                    border-top: none;
+                    position: relative;
+                    display: block;
+                }
+                a::after {
+                    content: " ";
+                    position: absolute;
+                    background-color: $primary-colour;
+                    height: 2px;
+                    width: 0%;
+                    left: 30%;
+                    top: 90%;
+                    bottom: -10px;
+                    transition: 0.5s;
+                    border-radius: $border-radius-md;
+                  }
+                  a:hover::after{
+                    width: 50%;
+                }
+                a:hover,a:focus{
+                    color: $primary-colour;
+                }
+                  a:focus::after{
+                    width: 50%;
+                }
+            }
+            }
+        .intro{
+            margin-top: 200px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            grid-column:3/ span 5;
+        }
+        .socials{
+            grid-column: 1;
+            grid-row:1;
+            margin-top: 110px;
+            margin-left: 29px;
+        }
+        }
+}
+@media screen and (min-width:1200px) {
+    body{
+        font-size: 23px;
+    }
+    .Home{
+        .navBar{
+            
+            div:first-child h1{
+                margin-left: 139px;
+            }
+            .menu{
+                margin-left: 540px;
+            }
+        }
+        .intro{
+            h1{
+                font-size: 50px;
+            }
+            h3{
+               font-size: 24px;
+            }
+            h2{
+                font-size: 36px;
+            }
+        .socials{
+          grid-column: span 1;
+          grid-row:1/ span 2;
+          width: 40px;
+          >*{
+            margin-top: 2px;
+          }
+         
+        }
+        
+    }
+    .scroll-down{
+        font-size: 14px;
+        left: -30px;
+        transform: rotate(-90deg);
+        display: flex;
+        flex-direction: row;
+        grid-column: span 1;
+        bottom: 45px;
+        h3{
+            margin-right: 15px;
+        }
+        hr{
+            width: 40px;
+            margin-left: 1px;
+        }
+    }
+}
+}

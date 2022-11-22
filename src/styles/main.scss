@@ -1,0 +1,177 @@
+@import './variables';
+
+/*=====================================
+                light mode
+======================================*/
+.light{
+    .background{
+        color: $text-colour-light;
+        transition: all ease-in 0.5s;
+        .nav-firstchild-open{
+            background-color:$background-colour-white;
+            transition: all 0.5s ease-out; 
+            opacity: 1;
+            z-index: 1;
+        }
+        .about{
+            background-color:$background-colour-white ;
+            > div:first-child{
+                box-shadow: $box-shadow-light-1;
+                .about-img{
+                    > div:last-child{
+                        box-shadow: $box-shadow-light-2;
+                    }
+                }
+            }
+            
+            
+        }
+        .skills{
+            background-color:$background-colour-dark ;
+            >div{
+                >div{
+                    .skiils-dot{
+                        background-color:$background-colour-dark ;
+                    }
+                    .skills-dot{
+                        background-color: white;
+                      }
+                }
+                
+            }
+            
+            
+
+        }
+        .services{
+            background-color:$background-colour-white;
+            >div:first-child{
+                box-shadow: $box-shadow-light-2;
+                .each-services{
+                    background-color: $service-lightmode-fill;
+                box-shadow: $box-shadow-light-2;
+                transition: ease-out 0.3s ;
+                }         
+             }
+         }
+        .projects{
+            .project-dot-true{
+                background-color:$background-colour-white;
+            }
+            .project-section{
+                box-shadow: $box-shadow-light-1;
+                >div:first-child{
+                    background-color:$background-colour-dark
+                }
+                >div:last-child{
+                     background-color:$background-colour-white;
+                }
+            }
+        }
+        @media screen and (min-width:992px) {
+            .each-services{
+                background-color: none;
+                box-shadow: none;
+                .hovered{
+                    background-color: $service-lightmode-fill;
+                    box-shadow: $box-shadow-light-2;
+                    transition: ease-out 0.3s ;
+                }
+            }
+        }
+    }
+
+}
+/*=====================================
+                dark mode
+======================================*/
+.dark
+{
+    .background{
+        color: $text-colour-dark;
+        transition: all ease-in 0.5s;
+        .nav-firstchild-open{
+            background-color:$background-colour-dark ;
+            transition: all 0.5s ease-out; 
+            opacity: 1;
+            z-index: 1;
+        }
+        .about{
+            background-color:$background-colour-dark ;
+            > div:first-child{
+                box-shadow: $box-shadow-dark-1;
+                .about-img{
+                    > div:last-child{
+                        box-shadow: $box-shadow-dark-2;
+                    }
+                }
+            }
+            }
+        .skills{
+            background-color:$background-colour-dark ;
+            >div{
+                >div{
+                    .skiils-dot{
+                        background-color:$background-colour-dark ;
+                    }
+                    .skills-dot{
+                        background-color: white;
+                      }
+                }
+                
+            }
+            
+            
+
+        }
+        .services{
+            background-color:$background-colour-dark ;
+            >div:first-child{
+                box-shadow: rgb(0, 0, 0) -1px 9px 20px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+                .each-services{
+                    background-color: $service-darkmode-fill;
+                box-shadow: $box-shadow-dark-2;
+                transition: ease-out 0.3s ;
+                }
+            }
+        }
+        .projects{
+            background-color:$background-colour-dark;
+            .project-section{
+                box-shadow: $box-shadow-dark-1;
+                >div:first-child{
+                    background-color:$background-colour-white;
+                }
+                >div:last-child{
+                    background-color:$background-colour-dark
+                }
+            }
+            .project-dot-true{
+                background-color:$background-colour-dark ;
+            }
+        }
+        @media screen and (min-width:992px) {
+            .each-services{
+                background-color: none;
+                box-shadow: none;
+                .hovered{
+                    background-color: $service-darkmode-fill;
+                    box-shadow: $box-shadow-dark-2;
+                    transition: ease-out 0.3s ;
+                }
+            }
+        }
+
+    }
+}
+.grid{
+    display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+button{
+    position: absolute;
+    right: 0;
+}
+

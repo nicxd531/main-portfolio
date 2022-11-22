@@ -1,0 +1,336 @@
+.Home {
+  border: 3px solid 0;
+  height: 100vh;
+}
+
+.Home .home-video {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+  top: 0;
+  grid-column: span 12;
+  left: 0;
+}
+
+.Home .navBar {
+  grid-column: span 12;
+  position: fixed;
+  width: 100%;
+}
+
+.Home .navBar .nav-firstchild-close {
+  background-color: transparent;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+  opacity: 0;
+}
+
+.Home .navBar div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home .navBar div:first-child h1 {
+  display: inline-block;
+  margin-left: 20px;
+  width: 80%;
+  text-transform: uppercase;
+}
+
+.Home .navBar .menuOpen {
+  height: 185px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.Home .navBar .menuClose {
+  height: 0px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.Home .navBar .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.Home .navBar .menu a {
+  border-top: 1px solid #707070;
+  text-transform: capitalize;
+  padding-left: 20px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Home .intro {
+  grid-column: span 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 250px;
+}
+
+.Home .intro h3 {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+
+.Home .intro h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.Home .intro h2 {
+  text-transform: capitalize;
+  font-size: 26px;
+  margin-top: 0;
+  margin-top: 10px;
+}
+
+.Home .socials {
+  -ms-grid-column: 12;
+  grid-column: 12;
+  margin-right: 19px;
+}
+
+.Home .socials * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.Home .scroll-down {
+  grid-column: span 12;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80px;
+  bottom: 0;
+  left: 45%;
+}
+
+.Home .scroll-down hr {
+  width: 72px;
+  border-color: #FBCA49;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.Home .scroll-to-top {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #FBCA49;
+  position: fixed;
+  bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  right: 3%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 414px) {
+  .Home .intro {
+    margin-top: 340px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 1.25rem;
+  }
+  .Home .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .Home .navBar div:first-child h1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-transform: capitalize;
+    margin-left: 40px;
+  }
+  .Home .navBar .hamburger-react {
+    display: none;
+  }
+  .Home .navBar .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/span 6;
+    margin-left: 360px;
+  }
+  .Home .navBar .menu a {
+    font-size: 1.25rem;
+    border-top: none;
+    position: relative;
+    display: block;
+  }
+  .Home .navBar .menu a::after {
+    content: " ";
+    position: absolute;
+    background-color: #FBCA49;
+    height: 2px;
+    width: 0%;
+    left: 30%;
+    top: 90%;
+    bottom: -10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 8px;
+  }
+  .Home .navBar .menu a:hover::after {
+    width: 50%;
+  }
+  .Home .navBar .menu a:hover, .Home .navBar .menu a:focus {
+    color: #FBCA49;
+  }
+  .Home .navBar .menu a:focus::after {
+    width: 50%;
+  }
+  .Home .intro {
+    margin-top: 200px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5;
+    grid-column: 3/ span 5;
+  }
+  .Home .socials {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 110px;
+    margin-left: 29px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 23px;
+  }
+  .Home .navBar div:first-child h1 {
+    margin-left: 139px;
+  }
+  .Home .navBar .menu {
+    margin-left: 540px;
+  }
+  .Home .intro h1 {
+    font-size: 50px;
+  }
+  .Home .intro h3 {
+    font-size: 24px;
+  }
+  .Home .intro h2 {
+    font-size: 36px;
+  }
+  .Home .intro .socials {
+    grid-column: span 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/ span 2;
+    width: 40px;
+  }
+  .Home .intro .socials > * {
+    margin-top: 2px;
+  }
+  .Home .scroll-down {
+    font-size: 14px;
+    left: -30px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    grid-column: span 1;
+    bottom: 45px;
+  }
+  .Home .scroll-down h3 {
+    margin-right: 15px;
+  }
+  .Home .scroll-down hr {
+    width: 40px;
+    margin-left: 1px;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

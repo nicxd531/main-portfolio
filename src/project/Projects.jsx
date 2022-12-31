@@ -3,9 +3,19 @@ import "../styles/Projects.css"
 import EachProjectFrontEnd from "./EachProjectsFrontEnd";
 import EachProjectsWebDesign from "./EachProjectsWebDesign";
 import { useState } from "react";
+import PopUp from "./PopUp";
 
 const Projects = ({theme}) => {
     const [ projectSwitch, setProjectSwitch] = useState(false)
+    const [pill, setpill] = useState(false)
+    const pills=[
+        "html",
+        "css",
+        "react",
+        'tailwind ',
+        "bootstrap",
+        "sass"
+    ]
     return ( 
         <section id="projectNav" className="projects">
             <HomeVideoBg lightMode={"/video/light-mode-project-video.mp4"} darkMode={"/video/dark-mode-project-video.mp4"} theme={theme}/>
@@ -17,7 +27,7 @@ const Projects = ({theme}) => {
                 <div>
                     <h1>portfolio's</h1>
                     <div className="each-projects">
-                        <EachProjectFrontEnd projectSwitch={projectSwitch} />
+                        <EachProjectFrontEnd setpill={setpill} projectSwitch={projectSwitch} />
                         <EachProjectsWebDesign  projectSwitch={projectSwitch}/>
                         <div className="circled-dots-project">
                             <div>
@@ -25,7 +35,9 @@ const Projects = ({theme}) => {
                                 <div onClick={()=>setProjectSwitch(true)} className={`${projectSwitch ? "project-dot-true" : "project-dot-false"}`}></div>
                             </div>
                         </div>
+                        
                     </div>
+                    {pill && <PopUp pills={pills}/>}
                 </div>
             </div>
         </section>

@@ -75,6 +75,91 @@
   background-color: #FBFBFB;
 }
 
+.light .background .projects .pop_up {
+  background-color: #000000;
+}
+
+.light .background .projects .pop_up div {
+  background-color: #FBFBFB;
+}
+
+.light .background .projects .pop_up div .eachPill {
+  background-color: #000000;
+  color: #FBFBFB;
+}
+
+.light .background .contact button {
+  color: #000000;
+}
+
+.light .background .contact > div {
+  background-color: #FBFBFB;
+  -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(241, 241, 241, 0.8) -6px -2px 16px 0px;
+}
+
+.light .background .contact > div .main-input input,
+.light .background .contact > div .main-input textarea {
+  padding-left: 20px;
+  background-color: #707070;
+}
+
+.light .background .contact > div .main-input input::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.light .background .contact > div .main-input input:-ms-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.light .background .contact > div .main-input input::-ms-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.light .background .contact > div .main-input input::placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.light .background .contact > div .main-input textarea::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.light .background .contact > div .main-input textarea:-ms-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.light .background .contact > div .main-input textarea::-ms-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.light .background .contact > div .main-input textarea::placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
 @media screen and (min-width: 992px) {
   .light .background .each-services {
     background-color: none;
@@ -169,6 +254,95 @@
 
 .dark .background .projects .project-dot-true {
   background-color: #000000;
+}
+
+.dark .background .projects .pop_up {
+  background-color: #FBFBFB;
+}
+
+.dark .background .projects .pop_up div {
+  background-color: #000000;
+}
+
+.dark .background .projects .pop_up div .eachPill {
+  background-color: #FBFBFB;
+  color: #000000;
+}
+
+.dark .background .contact {
+  background-color: rgba(0, 0, 0, 0.86);
+}
+
+.dark .background .contact button {
+  color: #FBFBFB;
+}
+
+.dark .background .contact > div {
+  background-color: #000000;
+  -webkit-box-shadow: rgba(77, 77, 87, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+          box-shadow: rgba(77, 77, 87, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+}
+
+.dark .background .contact > div .main-input input,
+.dark .background .contact > div .main-input textarea {
+  padding-left: 20px;
+  background-color: #707070;
+}
+
+.dark .background .contact > div .main-input input::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.dark .background .contact > div .main-input input:-ms-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.dark .background .contact > div .main-input input::-ms-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.dark .background .contact > div .main-input input::placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.dark .background .contact > div .main-input textarea::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.dark .background .contact > div .main-input textarea:-ms-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.dark .background .contact > div .main-input textarea::-ms-input-placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
+}
+
+.dark .background .contact > div .main-input textarea::placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-left: 20px;
+  color: #FBFBFB;
 }
 
 @media screen and (min-width: 992px) {

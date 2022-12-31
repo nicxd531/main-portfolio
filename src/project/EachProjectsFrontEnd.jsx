@@ -1,7 +1,9 @@
 import { FaGithub} from 'react-icons/fa'
 import { FiLink2} from 'react-icons/fi'
 
-const EachProjectFrontEnd  = ({projectSwitch}) => {
+
+
+const EachProjectFrontEnd  = ({projectSwitch , setpill}) => {
     const projectListFrontend=[
         "1",
         "2",
@@ -10,15 +12,21 @@ const EachProjectFrontEnd  = ({projectSwitch}) => {
         "5",
         "6"
     ]
+    
+    
     const frontEndMap = projectListFrontend.map((data,index)=>{
         return(
             <div key={index} className="project-section">
-                <div></div>
+                <div onClick={()=>setpill(true)}>
+                   
+                </div>
                 <div>
                     <a href=""><div><FaGithub size={24}/></div></a>
                     <a href=""><div><FiLink2 size={24}/></div></a>
-                    
                 </div>
+                
+                
+
             </div>
         )
     })

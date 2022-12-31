@@ -14,7 +14,7 @@ const NavBar = ({onScroll}) => {
                 <a href="#skillsNav">skills</a>
                 <a href="#servicesNav">services</a>
                 <a href="#projectNav">projects</a>
-                <a>contact</a>
+                <a href="#contactNav">contact</a>
             </div>
         </section>
      );

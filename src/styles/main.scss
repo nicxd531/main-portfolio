@@ -61,10 +61,52 @@
             .project-section{
                 box-shadow: $box-shadow-light-1;
                 >div:first-child{
-                    background-color:$background-colour-dark
+                    background-color:$background-colour-dark;
+                    
                 }
                 >div:last-child{
                      background-color:$background-colour-white;
+                }
+            }
+            .pop_up{
+                background-color: $background-colour-dark;
+                div{
+                    background-color: $background-colour-white;
+                    .eachPill{
+                        background-color: $background-colour-dark;
+                        color: $background-colour-white;
+                    }
+                }
+            }
+        }
+        .contact{
+            button{
+                color: $background-colour-dark;
+            }
+            
+            >div{
+                background-color: $background-colour-white;
+                box-shadow: $box-shadow-light-2;
+                .main-input{
+                    input,
+                    textarea{
+                        padding-left: 20px;
+                        background-color: $line-menu-colour;
+
+                        
+                    }
+                    input::placeholder{
+                        font-size: $font-size-12px;
+                        text-transform: capitalize;
+                        margin-left: 20px;
+                        color: $background-colour-white;
+                    }
+                    textarea::placeholder{
+                        font-size: $font-size-12px;
+                        text-transform: capitalize;
+                        margin-left: 20px;
+                        color: $background-colour-white;
+                    }
                 }
             }
         }
@@ -141,6 +183,7 @@
                 box-shadow: $box-shadow-dark-1;
                 >div:first-child{
                     background-color:$background-colour-white;
+                    
                 }
                 >div:last-child{
                     background-color:$background-colour-dark
@@ -148,6 +191,49 @@
             }
             .project-dot-true{
                 background-color:$background-colour-dark ;
+            }
+            .pop_up{
+                background-color: $background-colour-white;
+                div{
+                    background-color:$background-colour-dark ;
+                    .eachPill{
+                        background-color:$background-colour-white;
+                        color:$background-colour-dark;
+                    }
+                }
+            }
+        }
+        .contact{
+            background-color: rgba(0, 0, 0, 0.860);
+            button{
+                color: $background-colour-white;
+            }
+            
+            
+            >div{
+                background-color: $background-colour-dark ;
+                box-shadow: $box-shadow-dark-2;
+                .main-input{
+                    input,
+                    textarea{
+                        padding-left: 20px;
+                        background-color: $line-menu-colour;
+
+                        
+                    }
+                    input::placeholder{
+                        font-size: $font-size-12px;
+                        text-transform: capitalize;
+                        margin-left: 20px;
+                        color: $background-colour-white;
+                    }
+                    textarea::placeholder{
+                        font-size: $font-size-12px;
+                        text-transform: capitalize;
+                        margin-left: 20px;
+                        color: $background-colour-white;
+                    }
+                }
             }
         }
         @media screen and (min-width:992px) {

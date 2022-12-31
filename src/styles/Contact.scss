@@ -1,0 +1,149 @@
+@import "./variables";
+
+
+.contact{
+    height: 672px;
+    padding: 35px;
+    box-sizing: border-box;
+    >div{
+        width: 333px;
+        height: 572px;
+        margin: 0 auto;
+        border-radius: $border-radius-md;
+        .contactHeader{
+            display: flex;
+            flex-direction: column;
+            
+
+            >h3{
+                font-size: $font-size-16px;
+                text-transform: uppercase;
+                margin-left: 30px;
+                margin-top: 27px;
+            }
+
+            >hr{
+                width: 54px;
+                background-color: $primary-colour;
+                color: $primary-colour;
+                border: 1.5px solid $primary-colour ;
+                margin-left: 77px;
+                margin-top: 5px;
+                border-radius: 4px;
+            }
+        }
+        .main-input{
+            margin: 0 auto;
+            width: 292px;
+            >h3{
+                text-transform: capitalize;
+                font-size: $font-size-12px;
+                margin-top: 39px;  
+                margin-bottom: 13px;  
+            }
+            >form{
+                width: 292px;
+                margin: 0;
+                box-sizing: border-box;
+                
+                >input:nth-child(1){
+                    width: 143.5px;
+                    border-radius: $border-radius-md;
+                    border: none;
+                    height: 26px;
+                    box-sizing: border-box;
+                    margin-right: 5px;
+                    display: inline-block;
+                    
+                }  
+                >input:nth-child(2){
+                    width: 143.5px;
+                    border-radius: $border-radius-md;
+                    border: none;
+                    height: 26px;
+                    box-sizing: border-box;
+                    display: inline-block;
+                } 
+                >input:nth-child(3){
+                    width: 100%;
+                    border-radius: $border-radius-md;
+                    border: none;
+                    height: 26px;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    margin-top: 6px;
+                } 
+                >textarea{
+                    width: 100%;
+                    border-radius: $border-radius-md;
+                    border: none;
+                    height: 92px;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    margin-top: 6px;
+                } 
+                >button{
+                    position: relative;
+                    background-color: transparent;
+                    text-transform: capitalize;
+                    border: 3px solid $primary-colour;
+                    border-radius: 6px;
+                    margin-top: 11px;
+                    width: 127px;
+                    height: 23px;
+                    padding:0;
+                    padding-left: 6px;
+                    box-sizing: border-box;
+                    font-size: 11px;
+                    display: inline-block;
+                }
+            }
+            >div{
+               >div:first-child{
+                margin-top: 35px;
+                >h3{
+                    font-size: $font-size-14px ;
+                    text-transform: capitalize;
+                }
+                >hr{
+                    width: 52px;
+                    background-color: $primary-colour;
+                    color: $primary-colour;
+                    border: 1.5px solid $primary-colour ;
+                    margin-left: 29px;
+                    margin-top: 5px;
+                    border-radius: 4px;
+                }
+               }
+               >p{
+                font-size: $font-size-12px;
+                margin-top: 24.5px;
+               } 
+               >div:nth-child(3),
+               >div:nth-child(4),
+               >div:nth-child(5),
+               >div:nth-child(6){
+                display: flex;
+                align-items: center;
+                text-transform: capitalize;
+                margin-top: 11px;
+                a{
+                    display: flex;
+                }
+                h3{
+                    font-size: $font-size-14px;
+                    margin-left: 2px;
+                }
+               }
+            }
+             
+
+        }
+    }
+    h2{
+        font-size: $font-size-12px;
+        text-align: center;
+        margin-top: 13px;
+    }
+
+}

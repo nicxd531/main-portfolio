@@ -5,6 +5,7 @@ import About from "./about/about"
 import Skills from "./Skils/Skills"
 import Services from "./services/Services"
 import Projects from "./project/Projects"
+import Contact from "./contact/Contact"
 function App() {
  const [theme, setTheme] = useState("dark")
  
@@ -17,6 +18,7 @@ function App() {
             <Skills theme={theme}/>
             <Services/>
             <Projects  theme={theme}/>
+            <Contact />
           </div>
         </main>
   )

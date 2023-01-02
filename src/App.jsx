@@ -1,7 +1,7 @@
 import "./styles/main.css"
 import{useRef,useState,useEffect} from "react"
 import Home from "./home/Home"
-import About from "./about/about"
+import About from "./about/About"
 import Skills from "./Skils/Skills"
 import Services from "./services/Services"
 import Projects from "./project/Projects"

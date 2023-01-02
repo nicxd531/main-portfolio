@@ -246,6 +246,16 @@
                     transition: ease-out 0.3s ;
                 }
             }
+            .contact{
+                >div{
+                    input::placeholder{
+                        font-size: $font-size-18px
+                    }
+                    textarea::placeholder{
+                        font-size: $font-size-18px
+                    }
+                }
+            }
         }
 
     }

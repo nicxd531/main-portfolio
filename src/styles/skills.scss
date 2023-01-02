@@ -134,3 +134,106 @@
        }
      }
 }
+@media screen and (min-width:414px) {
+
+}
+@media screen and (min-width:768px) {
+
+}
+@media screen and (min-width:992px) {
+   .skills{
+      height: 773px;
+      .home-video{
+         video{
+         height: 773px;
+         }
+        }
+        >div{
+         .sklils-intro{
+            width: 490px;
+            margin-left: 54px;
+            margin-top: 48px;
+            display: inline-block;
+            h3{
+               font-size: $font-size-30px;
+            }
+            p{
+               font-size: $font-size-20px;
+            }
+         }
+         .circled-dots-skills{
+            width: 490px;
+            margin-left: 54px;
+            margin: 0;
+         }
+         .TopLanguages,.DesignTools,.OtherLiabries{
+            width: 634px;
+            display: inline-block;
+            margin: 0;
+            display: inline-block;
+         }
+        
+         >div:last-child{
+            .TopLanguages{
+               position: absolute;
+               top: 6%;
+               left: 40%;
+               .li {
+                  height: fit-content;
+                  width: 296px;
+                  margin-left: 39px;
+                  h2{
+                     font-size: $font-size-24px;
+                  }
+               }
+               .avatar {
+                  width: 65px;
+                  height: 65px;
+               }
+               >h2{
+                  font-size: 37px;
+               }
+            }
+            .DesignTools{
+               .li {
+                  height: fit-content;
+                  width: 225px;
+                  margin-left: 39px;
+                  h2{
+                     font-size: $font-size-18px;
+                  }
+               }
+               .avatar {
+                  width: 57px;
+                  height: 57px;
+               }
+               >h2{
+                  font-size: $font-size-32px;
+               }
+            }
+            .OtherLiabries{
+               position: absolute;
+               margin-top: -3%;
+               .li {
+                  height: fit-content;
+                  width: 236px;
+                  margin-left: 39px;
+                  h2{
+                     font-size: $font-size-18px;
+                  }
+               }
+               .avatar {
+                  width: 60px;
+                  height: 60px;
+               }
+               >h2{
+                  font-size: $font-size-32px;
+               }
+            }
+            
+         }
+         
+         
+      }
+   }
+}

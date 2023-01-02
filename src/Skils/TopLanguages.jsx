@@ -34,7 +34,7 @@ const TopLanguages = () => {
    
     const main = list.map((data ,index)=>{
         return(
-            <motion.div className="li" key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
+            <motion.div className="li " key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
                 <motion.div className="avatar" layout ><img src={data.image} alt={data.title}/></motion.div>
                 <h2>{data.title}</h2>
                 <AnimatePresence>
@@ -52,7 +52,7 @@ const TopLanguages = () => {
         )
     })
     return ( 
-        <div className="top-languages">
+        <div className="top-languages TopLanguages">
             <h2>Top Languages</h2>
             <LayoutGroup>
                 <motion.div className="ul grid" layout >

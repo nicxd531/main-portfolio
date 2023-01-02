@@ -155,4 +155,96 @@
   border-radius: 10px;
   margin-top: 12px;
 }
+
+@media screen and (min-width: 992px) {
+  .skills {
+    height: 773px;
+  }
+  .skills .home-video video {
+    height: 773px;
+  }
+  .skills > div .sklils-intro {
+    width: 490px;
+    margin-left: 54px;
+    margin-top: 48px;
+    display: inline-block;
+  }
+  .skills > div .sklils-intro h3 {
+    font-size: 1.875rem;
+  }
+  .skills > div .sklils-intro p {
+    font-size: 1.25rem;
+  }
+  .skills > div .circled-dots-skills {
+    width: 490px;
+    margin-left: 54px;
+    margin: 0;
+  }
+  .skills > div .TopLanguages, .skills > div .DesignTools, .skills > div .OtherLiabries {
+    width: 634px;
+    display: inline-block;
+    margin: 0;
+    display: inline-block;
+  }
+  .skills > div > div:last-child .TopLanguages {
+    position: absolute;
+    top: 6%;
+    left: 40%;
+  }
+  .skills > div > div:last-child .TopLanguages .li {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 296px;
+    margin-left: 39px;
+  }
+  .skills > div > div:last-child .TopLanguages .li h2 {
+    font-size: 1.5rem;
+  }
+  .skills > div > div:last-child .TopLanguages .avatar {
+    width: 65px;
+    height: 65px;
+  }
+  .skills > div > div:last-child .TopLanguages > h2 {
+    font-size: 37px;
+  }
+  .skills > div > div:last-child .DesignTools .li {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 225px;
+    margin-left: 39px;
+  }
+  .skills > div > div:last-child .DesignTools .li h2 {
+    font-size: 1.125rem;
+  }
+  .skills > div > div:last-child .DesignTools .avatar {
+    width: 57px;
+    height: 57px;
+  }
+  .skills > div > div:last-child .DesignTools > h2 {
+    font-size: 2rem;
+  }
+  .skills > div > div:last-child .OtherLiabries {
+    position: absolute;
+    margin-top: -3%;
+  }
+  .skills > div > div:last-child .OtherLiabries .li {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 236px;
+    margin-left: 39px;
+  }
+  .skills > div > div:last-child .OtherLiabries .li h2 {
+    font-size: 1.125rem;
+  }
+  .skills > div > div:last-child .OtherLiabries .avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .skills > div > div:last-child .OtherLiabries > h2 {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=skills.css.map */

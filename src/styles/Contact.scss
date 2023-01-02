@@ -81,6 +81,7 @@
                     box-sizing: border-box;
                     display: inline-block;
                     margin-top: 6px;
+                    resize: none;
                 } 
                 >button{
                     position: relative;
@@ -145,5 +146,93 @@
         text-align: center;
         margin-top: 13px;
     }
+   
 
+}
+@media screen and (min-width:414px) {
+
+}
+@media screen and (min-width:768px) {
+
+}
+@media screen and (min-width:992px) {
+    .contact{
+        height: 739px;
+        >div{
+            width: 1088px;
+            height: 572px;
+            .contactHeader{
+                margin-top: 60px;
+                margin-left: 34px;
+                >h3{
+                    font-size: $font-size-24px;
+                }
+                >hr{
+                    width: 108px;
+                }
+            }
+            .main-input{
+                width: 100%;
+                position: relative;
+                >h3{
+                    font-size: $font-size-20px;
+                    margin-left: 34px;
+                }
+                >form{
+                    display: inline-block;
+                    margin-left: 34px;
+                    width: 423px;
+                    >input:nth-child(1){
+                        width:192px ;
+                        height: 38px;
+                    }
+                    >input:nth-child(2){
+                        width: 223px;
+                        height: 38px;
+                    }
+                    >input:nth-child(3){
+                        height: 38px;
+                    }
+                    >textarea{
+                        height: 135px;
+                    }
+                    >button{
+                        width: 183px;
+                        font-size: $font-size-18px;
+                        height: 33px;
+                    }
+                }
+                >div{
+                    width: 410px;
+                    display: inline-block;
+                    margin-left: 108px;
+                    margin-top: 0;
+                    position: absolute;
+                    top: 0;
+                    >div:first-child{
+                        >h3{
+                            font-size: $font-size-20px
+                        }
+                        >hr{
+                            width: 70px;
+                            margin-left: 50px;
+                        }
+                    }
+                    >p{
+                        font-size: $font-size-18px
+                    }
+                    >div:nth-child(3),
+                    >div:nth-child(4),
+                    >div:nth-child(5),
+                    >div:nth-child(6){
+                        h3{
+                            font-size: $font-size-18px;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

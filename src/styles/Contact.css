@@ -99,6 +99,7 @@
           box-sizing: border-box;
   display: inline-block;
   margin-top: 6px;
+  resize: none;
 }
 
 .contact > div .main-input > form > button {
@@ -177,5 +178,82 @@
   font-size: 0.75rem;
   text-align: center;
   margin-top: 13px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+    height: 739px;
+  }
+  .contact > div {
+    width: 1088px;
+    height: 572px;
+  }
+  .contact > div .contactHeader {
+    margin-top: 60px;
+    margin-left: 34px;
+  }
+  .contact > div .contactHeader > h3 {
+    font-size: 1.5rem;
+  }
+  .contact > div .contactHeader > hr {
+    width: 108px;
+  }
+  .contact > div .main-input {
+    width: 100%;
+    position: relative;
+  }
+  .contact > div .main-input > h3 {
+    font-size: 1.25rem;
+    margin-left: 34px;
+  }
+  .contact > div .main-input > form {
+    display: inline-block;
+    margin-left: 34px;
+    width: 423px;
+  }
+  .contact > div .main-input > form > input:nth-child(1) {
+    width: 192px;
+    height: 38px;
+  }
+  .contact > div .main-input > form > input:nth-child(2) {
+    width: 223px;
+    height: 38px;
+  }
+  .contact > div .main-input > form > input:nth-child(3) {
+    height: 38px;
+  }
+  .contact > div .main-input > form > textarea {
+    height: 135px;
+  }
+  .contact > div .main-input > form > button {
+    width: 183px;
+    font-size: 1.125rem;
+    height: 33px;
+  }
+  .contact > div .main-input > div {
+    width: 410px;
+    display: inline-block;
+    margin-left: 108px;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+  }
+  .contact > div .main-input > div > div:first-child > h3 {
+    font-size: 1.25rem;
+  }
+  .contact > div .main-input > div > div:first-child > hr {
+    width: 70px;
+    margin-left: 50px;
+  }
+  .contact > div .main-input > div > p {
+    font-size: 1.125rem;
+  }
+  .contact > div .main-input > div > div:nth-child(3) h3,
+  .contact > div .main-input > div > div:nth-child(4) h3,
+  .contact > div .main-input > div > div:nth-child(5) h3,
+  .contact > div .main-input > div > div:nth-child(6) h3 {
+    font-size: 1.125rem;
+    margin-left: 8px;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

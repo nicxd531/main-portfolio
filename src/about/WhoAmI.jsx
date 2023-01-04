@@ -1,6 +1,10 @@
 const WhoAmI = () => {
     return ( 
-        <div className="who-am-i">
+        <div 
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-delay="350"
+        className="who-am-i">
             <div>
                 <h2>who am i ?</h2>
                 <hr/>
@@ -14,7 +18,7 @@ const WhoAmI = () => {
                 </p><p>
                 I have proficient knowledge and experience in building
                web sites with the use of various programming
-                language such as HTMl,CSS,JavaScript and React.     
+                language such as Htnl,Css,JavaScript and React.     
                 </p>
             </div>
 

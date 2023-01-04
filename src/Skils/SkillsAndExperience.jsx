@@ -1,6 +1,9 @@
 const SkillsAndExperience = () => {
     return ( 
-        <div className="sklils-intro">
+        <div 
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className="sklils-intro">
             <h3>My Creative <em>Skills</em> And <em>Experience</em></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisic
                 ing elit. Dignissimos, ratione error est recusandae 

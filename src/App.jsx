@@ -6,9 +6,18 @@ import Skills from "./Skils/Skills"
 import Services from "./services/Services"
 import Projects from "./project/Projects"
 import Contact from "./contact/Contact"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 function App() {
- const [theme, setTheme] = useState("dark")
- 
+ const [theme, setTheme] = useState("light")
+ useEffect(()=>{
+  AOS.init(
+     { duration: 600,
+      easing: 'ease',
+      once: false}
+  );
+})
   return (
 
         <main className={theme} >
@@ -20,7 +29,7 @@ function App() {
             <Projects  theme={theme}/>
             <Contact />
           </div>
-        </main>
+        </main> 
   )
 }
 

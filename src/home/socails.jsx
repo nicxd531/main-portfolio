@@ -25,12 +25,30 @@ const Socials = ({theme, setTheme}) => {
     
     return ( 
         <div className='socials'>
-            <a>{themeIcon}</a>
-            <a>{videoIcon}</a>
-            <a><FaGithub className='icon-styles' size={30}/></a>
-            <a><FaLinkedinIn className='icon-styles' size={30}/></a>
-            <a><AiOutlineTwitter className='icon-styles' size={30}/></a>
-            <a><FiInstagram className='icon-styles' size={30}/></a>
+            <a
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            >{themeIcon}</a>
+            <a
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            >{videoIcon}</a>
+            <a
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            ><FaGithub className='icon-styles' size={30}/></a>
+            <a
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            ><FaLinkedinIn className='icon-styles' size={30}/></a>
+            <a
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            ><AiOutlineTwitter className='icon-styles' size={30}/></a>
+            <a
+            data-aos="fade-up"
+     data-aos-duration="3000"
+            ><FiInstagram className='icon-styles' size={30}/></a>
         </div>
      );
 }

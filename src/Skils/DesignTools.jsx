@@ -9,25 +9,25 @@ const DesignTools = () => {
         {
             "image": "image/xd.png",
             "title": "ADOBE XD",
-            "description": "quos quaerat quis minima sequi.esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod"
+            "description": "Adobe XD is a user experience design tool developed by Adobe that is used to create high-fidelity prototypes of websites and mobile applications. It is part of the Adobe Creative Cloud suite of design tools, and is often used by designers to create wireframes, mockups, and interactive prototypes of user interfaces."
 
         },
         {
             "image": "image/photoshop.png",
             "title": " PHOTOSHOP",
-            "description": "quos quaerat quis minima sequi.esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod"
+            "description": "Adobe Photoshop is a popular image editing software developed and published by Adobe. It is used by photographers, graphic designers, and artists to create and manipulate digital images."
 
         },
         {
             "image": "image/figma.png",
             "title": "FIGMA",
-            "description": "quos quaerat quis minima sequi.esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod"
+            "description": "Figma is a cloud-based design and prototyping tool that is used to create user interfaces, websites, and mobile applications. It is a popular choice among designers due to its ability to support real-time collaboration and its cross-platform compatibility."
 
         },
         {
             "image": "image/illustrator.png",
             "title": "ILLUSTRATOR",
-            "description": "quos quaerat quis minima sequi.esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod"
+            "description": "Adobe Illustrator is a popular vector graphics editor developed and published by Adobe. It is used by graphic designers, artists, and illustrators to create and edit vector graphics such as logos, icons, and illustrations."
 
         }
     ]
@@ -52,7 +52,11 @@ const DesignTools = () => {
         )
     })
     return (
-        <div className="top-languages DesignTools">
+        <div 
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="400"
+            className="top-languages DesignTools">
             <h2>designs tools</h2>
             <LayoutGroup>
                 <motion.div className="ul grid" layout >

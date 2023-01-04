@@ -1,6 +1,9 @@
 const AboutImg = () => {
     return ( 
-        <div className="about-img">
+        <div 
+        data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+        className="about-img">
             <div></div>
             <div>
                 <img src="/image/user.jpg" alt="profiile picture"/>

@@ -21,7 +21,10 @@ const MainServices = () => {
      const requiresDAta =
      services.map((data, index)=>{
          return(
-             <div onMouseEnter={()=>sethover(index)}  key={index} className={`each-services ${index=== hover? "hovered":"notHoverd"}`}>
+             <div 
+             data-aos="zoom-in"
+             data-aos-duration="3000"
+             onMouseEnter={()=>sethover(index)}  key={index} className={`each-services ${index=== hover? "hovered":"notHoverd"}`}>
                  <div>
                      <img src={data.image} alt="services-image"/>
                  </div>

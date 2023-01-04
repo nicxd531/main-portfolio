@@ -71,6 +71,11 @@
   background-color: #000000;
 }
 
+.light .background .projects .project-section > div:first-child .hoverDescription {
+  background-color: #000000;
+  color: #FBFBFB;
+}
+
 .light .background .projects .project-section > div:last-child {
   background-color: #FBFBFB;
 }
@@ -246,6 +251,11 @@
 
 .dark .background .projects .project-section > div:first-child {
   background-color: #FBFBFB;
+}
+
+.dark .background .projects .project-section > div:first-child .hoverDescription {
+  background-color: #FBFBFB;
+  color: #000000;
 }
 
 .dark .background .projects .project-section > div:last-child {

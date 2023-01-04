@@ -62,6 +62,10 @@
                 box-shadow: $box-shadow-light-1;
                 >div:first-child{
                     background-color:$background-colour-dark;
+                    .hoverDescription{
+                        background-color:$background-colour-dark;
+                        color:$background-colour-white;
+                    }
                     
                 }
                 >div:last-child{
@@ -183,6 +187,10 @@
                 box-shadow: $box-shadow-dark-1;
                 >div:first-child{
                     background-color:$background-colour-white;
+                    .hoverDescription{
+                        background-color:$background-colour-white;
+                        color:$background-colour-dark;
+                    }
                     
                 }
                 >div:last-child{

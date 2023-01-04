@@ -9,32 +9,36 @@ const TopLanguages = () => {
         {
             "image":"image/html.png",
             "title":"HTML",
-            "description":"quos quaerat quis minima sequi.esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod"
+            "description":"HTML (HyperText Markup Language) is a markup language used to structure content on the web. It consists of a series of elements, or tags, which are used to describe the content and layout of a webpage."
 
         },
         {
             "image":"image/javascript.png",
             "title":"JAVASCRIPT",
-            "description":"quos quaerat quis minima sequi.esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod"
+            "description":"JavaScript is used to add interactivity to websites by allowing the webpage to respond to user actions such as clicks, scrolls, and form input. It can also be used to manipulate the HTML and CSS on a webpage, making it an essential tool for web developers."
 
         },
         {
             "image":"image/css.png",
             "title":"CSS",
-            "description":"quos quaerat quis minima sequi.esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod"
+            "description":"CSS (Cascading Style Sheets) is a stylesheet language used to describe the appearance and layout of a document written in HTML. CSS is used to control the style of a webpage, including the font, color, and layout."
 
         },
         {
             "image":"image/react.png",
             "title":"REACT",
-            "description":"quos quaerat quis minima sequi.esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod"
+            "description":"eact is a JavaScript library for building user interfaces. It was developed by Facebook, and is often used for building single-page applications and mobile applications."
 
         }
     ]
    
     const main = list.map((data ,index)=>{
         return(
-            <motion.div className="li " key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
+            <motion.div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="300" 
+            className="li " key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
                 <motion.div className="avatar" layout ><img src={data.image} alt={data.title}/></motion.div>
                 <h2>{data.title}</h2>
                 <AnimatePresence>

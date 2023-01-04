@@ -12,8 +12,14 @@ const About = () => {
                     <hr/>  
                 </div>
                 <AboutImg/>
-                <AboutInfo/>
-                <WhoAmI/>
+                <AboutInfo
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                />
+                <WhoAmI
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                />
             </div>
 
         </section>

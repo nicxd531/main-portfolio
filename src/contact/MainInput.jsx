@@ -9,18 +9,26 @@ const MainInput = () => {
           <h3>message me</h3>
           <form name="contact" method="POST" data-netlify="true">
             <input 
+            required
+            name='name'
             type="text"
             placeholder="name"
             />
             <input 
+            required
+            name='email'
             type="text"
             placeholder="email"
             />
             <input 
+            required
+            name='subject'
             type="text"
             placeholder="subject"
             />
             <textarea
+            required
+            name='text area'
             placeholder="message"
             />
             <button type="submit">send message</button>

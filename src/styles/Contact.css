@@ -1,0 +1,220 @@
+.contact {
+  height: 672px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+.contact > div {
+  width: 333px;
+  height: 572px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.contact > div .contactHeader {
+  display: flex;
+  flex-direction: column;
+}
+.contact > div .contactHeader > h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-top: 27px;
+}
+.contact > div .contactHeader > hr {
+  width: 54px;
+  background-color: #FBCA49;
+  color: #FBCA49;
+  border: 1.5px solid #FBCA49;
+  margin-left: 77px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+.contact > div .main-input {
+  margin: 0 auto;
+  width: 292px;
+}
+.contact > div .main-input > h3 {
+  text-transform: capitalize;
+  font-size: 0.75rem;
+  margin-top: 39px;
+  margin-bottom: 13px;
+}
+.contact > div .main-input > form {
+  width: 292px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contact > div .main-input > form > input:nth-child(1) {
+  width: 143.5px;
+  border-radius: 8px;
+  border: none;
+  height: 26px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  display: inline-block;
+}
+.contact > div .main-input > form > input:nth-child(2) {
+  width: 143.5px;
+  border-radius: 8px;
+  border: none;
+  height: 26px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.contact > div .main-input > form > input:nth-child(3) {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  height: 26px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 6px;
+}
+.contact > div .main-input > form > textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  height: 92px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 6px;
+  resize: none;
+}
+.contact > div .main-input > form > button {
+  position: relative;
+  background-color: transparent;
+  text-transform: capitalize;
+  border: 3px solid #FBCA49;
+  border-radius: 6px;
+  margin-top: 11px;
+  width: 127px;
+  height: 23px;
+  padding: 0;
+  padding-left: 6px;
+  box-sizing: border-box;
+  font-size: 11px;
+  display: inline-block;
+}
+.contact > div .main-input > div > div:first-child {
+  margin-top: 35px;
+}
+.contact > div .main-input > div > div:first-child > h3 {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+.contact > div .main-input > div > div:first-child > hr {
+  width: 52px;
+  background-color: #FBCA49;
+  color: #FBCA49;
+  border: 1.5px solid #FBCA49;
+  margin-left: 29px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+.contact > div .main-input > div > p {
+  font-size: 0.75rem;
+  margin-top: 24.5px;
+}
+.contact > div .main-input > div > div:nth-child(3),
+.contact > div .main-input > div > div:nth-child(4),
+.contact > div .main-input > div > div:nth-child(5),
+.contact > div .main-input > div > div:nth-child(6) {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  margin-top: 11px;
+}
+.contact > div .main-input > div > div:nth-child(3) a,
+.contact > div .main-input > div > div:nth-child(4) a,
+.contact > div .main-input > div > div:nth-child(5) a,
+.contact > div .main-input > div > div:nth-child(6) a {
+  display: flex;
+}
+.contact > div .main-input > div > div:nth-child(3) h3,
+.contact > div .main-input > div > div:nth-child(4) h3,
+.contact > div .main-input > div > div:nth-child(5) h3,
+.contact > div .main-input > div > div:nth-child(6) h3 {
+  font-size: 0.875rem;
+  margin-left: 2px;
+}
+.contact h2 {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 13px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+    height: 739px;
+  }
+  .contact > div {
+    width: 1088px;
+    height: 572px;
+  }
+  .contact > div .contactHeader {
+    margin-top: 60px;
+    margin-left: 34px;
+  }
+  .contact > div .contactHeader > h3 {
+    font-size: 1.5rem;
+  }
+  .contact > div .contactHeader > hr {
+    width: 108px;
+  }
+  .contact > div .main-input {
+    width: 100%;
+    position: relative;
+  }
+  .contact > div .main-input > h3 {
+    font-size: 1.25rem;
+    margin-left: 34px;
+  }
+  .contact > div .main-input > form {
+    display: inline-block;
+    margin-left: 34px;
+    width: 423px;
+  }
+  .contact > div .main-input > form > input:nth-child(1) {
+    width: 192px;
+    height: 38px;
+  }
+  .contact > div .main-input > form > input:nth-child(2) {
+    width: 223px;
+    height: 38px;
+  }
+  .contact > div .main-input > form > input:nth-child(3) {
+    height: 38px;
+  }
+  .contact > div .main-input > form > textarea {
+    height: 135px;
+  }
+  .contact > div .main-input > form > button {
+    width: 183px;
+    font-size: 1.125rem;
+    height: 33px;
+  }
+  .contact > div .main-input > div {
+    width: 410px;
+    display: inline-block;
+    margin-left: 108px;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+  }
+  .contact > div .main-input > div > div:first-child > h3 {
+    font-size: 1.25rem;
+  }
+  .contact > div .main-input > div > div:first-child > hr {
+    width: 70px;
+    margin-left: 50px;
+  }
+  .contact > div .main-input > div > p {
+    font-size: 1.125rem;
+  }
+  .contact > div .main-input > div > div:nth-child(3) h3,
+.contact > div .main-input > div > div:nth-child(4) h3,
+.contact > div .main-input > div > div:nth-child(5) h3,
+.contact > div .main-input > div > div:nth-child(6) h3 {
+    font-size: 1.125rem;
+    margin-left: 8px;
+  }
+}/*# sourceMappingURL=Contact.css.map */

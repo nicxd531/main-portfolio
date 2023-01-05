@@ -1,0 +1,17 @@
+html,
+body,
+p,
+a,
+ul,
+li,
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: inherit;
+  font-family: robotoSlab, Arial, Helvetica, sans-serif;
+}

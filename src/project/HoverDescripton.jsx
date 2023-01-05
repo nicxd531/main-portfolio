@@ -1,9 +1,10 @@
-const HoverDescription = ({title , description}) => {
+const HoverDescription = ({title , description,link}) => {
+    console.log(link)
     return ( 
-        <section className="hoverDescription">
+        <a href={link} className="hoverDescription">
             <h2>article website</h2>
             <p>{description}</p>
-        </section>
+        </a>
      );
 }
  

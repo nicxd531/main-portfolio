@@ -94,13 +94,14 @@
             }
         }
         > div:last-child{
-            padding: 2px;
+            padding: 8px;
             text-align: center;
             margin-bottom: 23px;
             p{
                 margin-top: 8px;
                 font-weight: normal;
                 font-size: $font-size-12px;
+                padding: 2px;
             }
         }
     }

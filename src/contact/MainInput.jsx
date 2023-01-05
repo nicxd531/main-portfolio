@@ -7,7 +7,7 @@ const MainInput = () => {
     return (
         <div className="main-input">
           <h3>message me</h3>
-          <form>
+          <form name="contact" method="POST" data-netlify="true">
             <input 
             type="text"
             placeholder="name"
@@ -23,7 +23,7 @@ const MainInput = () => {
             <textarea
             placeholder="message"
             />
-            <button>send message</button>
+            <button type="submit">send message</button>
           </form>
           <div>
             <div>

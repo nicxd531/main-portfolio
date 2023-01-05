@@ -38,9 +38,7 @@ const MainInput = () => {
               <h3>get in touch</h3>
               <hr/>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Dignissimos harum corporis fuga corrupti. 
-            Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+            <p>I'm always open to new opportunities and collaborations. If you think we could work together, please don't hesitate to get in touch using the form on this page or by sending me an email</p>
             <div>
               <RiUserLocationFill size={16}/>
               <h3>lago,nigeria</h3>

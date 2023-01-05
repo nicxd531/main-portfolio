@@ -19,7 +19,7 @@
    .navBar{
     grid-column: $span-12;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     .nav-firstchild-close{
         background-color: transparent;
         transition: all ease-in 0.3s;

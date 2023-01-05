@@ -3,35 +3,11 @@ import { BsFillTelephoneFill} from 'react-icons/bs'
 import { SiGmail} from 'react-icons/si'
 import { HiDownload} from 'react-icons/hi'
 const MainInput = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-    
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
-  };
-  
-  document
-    .querySelector("form")
-    .addEventListener("submit", handleSubmit);
-  
 
     return (
         <div className="main-input">
           <h3>message me</h3>
-          <form 
-          data-netlify="true"
-          name="contact"
-          method="post"
-          onSubmit={handleSubmit}
-          >
+          <form name="contact" method="POST" netlify netlify-honeypot="bot-field" hidden>
             <input 
             required
             name='name'

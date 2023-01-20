@@ -19,7 +19,7 @@
 .Home .navBar {
   grid-column: span 12;
   position: fixed;
-  width: 100%;
+  width: 100vw;
 }
 .Home .navBar .nav-firstchild-close {
   background-color: transparent;
@@ -103,7 +103,7 @@
   flex-direction: column;
   height: 80px;
   bottom: 0;
-  left: 45%;
+  left: 38%;
 }
 .Home .scroll-down hr {
   width: 72px;

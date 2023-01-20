@@ -16,7 +16,7 @@ const Projects = ({theme}) => {
                     <hr/>
                 </div>
                 <div>
-                    <h1>portfolio's</h1>
+                    <h1>project's</h1>
                     <div className="each-projects">
                         <EachProjectFrontEnd  projectSwitch={projectSwitch} />
                         <EachProjectsWebDesign  projectSwitch={projectSwitch}/>

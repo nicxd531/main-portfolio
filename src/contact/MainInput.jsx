@@ -41,7 +41,7 @@ const MainInput = () => {
             <p>I'm always open to new opportunities and collaborations. If you think we could work together, please don't hesitate to get in touch using the form on this page or by sending me an email</p>
             <div>
               <RiUserLocationFill size={16}/>
-              <h3>lago,nigeria</h3>
+              <h3>lagos,nigeria</h3>
             </div>
             <div>
               <BsFillTelephoneFill size={16}/>

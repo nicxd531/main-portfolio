@@ -25,33 +25,16 @@ const Socials = ({theme, setTheme}) => {
     
     return ( 
         <div className='socials'>
-            <a
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            >{themeIcon}</a>
-            <a
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            >{videoIcon}</a>
+            <a>{themeIcon}</a>
+            <a>{videoIcon}</a>
             <a
             href='http://github.com/nicxd531'
-            data-aos="fade-up"
-            data-aos-duration="3000"
             ><FaGithub className='icon-styles' size={30}/></a>
-            <a
-            href='https://www.linkedin.com/in/ola-olasunkanmi/'
-            data-aos="fade-up"
-            data-aos-duration="3000"
+            <a href='https://www.linkedin.com/in/ola-olasunkanmi/'
             ><FaLinkedinIn className='icon-styles' size={30}/></a>
-            <a
-            href='https://mobile.twitter.com/ultra_nicx'
-            data-aos="fade-up"
-            data-aos-duration="3000"
+            <a href='https://mobile.twitter.com/ultra_nicx'
             ><AiOutlineTwitter className='icon-styles' size={30}/></a>
-            <a
-            href='https://www.instagram.com/nicx_ola/'
-            data-aos="fade-up"
-            data-aos-duration="3000"
+            <a href='https://www.instagram.com/nicx_ola/'
             ><FiInstagram className='icon-styles' size={30}/></a>
         </div>
      );

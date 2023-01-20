@@ -20,7 +20,13 @@ const EachProjectFrontEnd  = ({projectSwitch}) => {
             "link2":"https://github.com/nicxd531/main-portfolio/tree/main/",
             "image":"image/portfolio.jpg", 
         },
-        "3",
+        {
+            "title":"desktop article website ",
+            "description":"desktop website first work with upcoming updates",
+            "link":"https://article-website-for-desktop.netlify.app/",
+            "link2":"https://github.com/nicxd531/blitz_webpage_for_desktop/",
+            "image":"image/article website  for desktop.jpg", 
+        },
         '4',
         "5",
         "6"

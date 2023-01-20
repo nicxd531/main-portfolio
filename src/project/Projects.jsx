@@ -12,7 +12,7 @@ const Projects = ({theme}) => {
             <HomeVideoBg lightMode={"/video/light-mode-project-video.mp4"} darkMode={"/video/dark-mode-project-video.mp4"} theme={theme}/>
             <div className="project-content">
                 <div>
-                    { projectSwitch ? <h1>Web design's</h1> : <h1>frontend</h1>}
+                    { projectSwitch ? <h1>small time projects </h1> : <h1>frontend</h1>}
                     <hr/>
                 </div>
                 <div>

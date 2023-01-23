@@ -53,7 +53,7 @@ const MainInput = () => {
             </div>
             <div>
               <a href="/files/h.pdf" download>
-                <HiDownload size={16}/>
+                <HiDownload size={20}/>
                 <h3>Download Resume</h3>
               </a>
             </div>

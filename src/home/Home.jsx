@@ -15,7 +15,7 @@ const Home = ({theme, setTheme}) => {
     }
     useEffect(() => {
       window.addEventListener('scroll',()=>{
-        if(window.scrollY > 300) {
+        if(window.scrollY > 100) {
             setShowTopBtn(true);
         }else{
             setShowTopBtn(false)

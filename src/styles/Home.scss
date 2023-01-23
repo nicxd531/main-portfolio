@@ -93,7 +93,6 @@
     margin-right: 19px;
     *{
         margin-top: 10px;
-        margin-bottom: 10px;
         cursor: pointer;
     }
    }
@@ -233,8 +232,11 @@
           grid-column: span 1;
           grid-row:1/ span 2;
           width: 40px;
+          display: flex;
+          flex-direction: column;
           >*{
             margin-top: 2px;
+           
           }
          
         }

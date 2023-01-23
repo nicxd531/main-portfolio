@@ -91,7 +91,6 @@
 }
 .Home .socials * {
   margin-top: 10px;
-  margin-bottom: 10px;
   cursor: pointer;
 }
 .Home .scroll-down {
@@ -222,6 +221,8 @@
     grid-column: span 1;
     grid-row: 1/span 2;
     width: 40px;
+    display: flex;
+    flex-direction: column;
   }
   .Home .intro .socials > * {
     margin-top: 2px;

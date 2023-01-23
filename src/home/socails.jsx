@@ -24,7 +24,7 @@ const Socials = ({theme, setTheme}) => {
 
     
     return ( 
-        <div className='socials'>
+        <div className='socials' style={{"display":"flex","flexDirection":"column"}}>
             <a>{themeIcon}</a>
             <a>{videoIcon}</a>
             <a

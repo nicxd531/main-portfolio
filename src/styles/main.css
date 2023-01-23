@@ -132,6 +132,8 @@
 .dark .background {
   color: #E8EDDF;
   transition: all ease-in 0.5s;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 .dark .background .nav-firstchild-open {
   background-color: #000000;

@@ -109,12 +109,12 @@
 @media screen and (min-width:992px) {
     .about{
         > div:first-child{
-            width: 1127px ;
+            min-width: 1127px ;
             height: 687px ;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            padding: 56px 79px;
+            padding: 40px 60px;
            > div:first-child,
             .about-img,
             .about-info{

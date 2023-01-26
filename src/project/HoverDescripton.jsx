@@ -1,8 +1,9 @@
 const HoverDescription = ({title , description,link}) => {
     console.log(link)
+    
     return ( 
-        <a href={link} className="hoverDescription">
-            <h2>article website</h2>
+        <a className="hoverDescription">
+            <h2>{title}</h2>
             <p>{description}</p>
         </a>
      );

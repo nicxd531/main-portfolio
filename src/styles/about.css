@@ -1,11 +1,11 @@
 .about {
-  height: 857px;
+  height: 950px;
   width: 100vw;
   box-sizing: border-box;
   padding-top: 30px;
 }
 .about > div:first-child {
-  height: 767px;
+  height: 900px;
   width: 335px;
   margin: auto;
   border-radius: 8px;

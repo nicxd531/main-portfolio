@@ -13,12 +13,9 @@ const WhoAmI = () => {
                 <p>
                 Hi i am a web developer from Lagos,Nigeria
                 </p><p>
-                i have a passion for responsive web site designs 
-                and i am a firm believe in the mobile first approach.
+                    As a front-end developer hailing from Lagos, Nigeria, I bring a unique perspective to the table. I am a firm believer in the mobile-first approach and am constantly pushing the boundaries of what is possible on small screens. My problem-solving skills are top-notch and I am a master of React. When I'm not coding, you can find me exploring new technologies and expanding my skillset. Let's create something truly innovative and awe-inspiring together!
                 </p><p>
-                I have proficient knowledge and experience in building
-               web sites with the use of various programming
-                language such as Htnl,Css,JavaScript and React.     
+                    I am an expert web developer with exceptional proficiency in utilizing a wide range of programming languages such as HTML, CSS, JavaScript, and React to create exceptional websites that are visually stunning and highly functional.    
                 </p>
             </div>
 

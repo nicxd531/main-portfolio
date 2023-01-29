@@ -52,7 +52,7 @@ const MainInput = () => {
               <h3>Finixd531@gmail.com</h3>
             </div>
             <div>
-              <a href="/files/h.pdf" download>
+              <a href="/files/ola olasunkanmi resume.pdf" download>
                 <HiDownload size={20}/>
                 <h3>Download Resume</h3>
               </a>

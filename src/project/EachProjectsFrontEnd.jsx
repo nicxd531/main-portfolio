@@ -20,7 +20,13 @@ const EachProjectFrontEnd  = ({projectSwitch}) => {
             "link2":"https://github.com/nicxd531/main-portfolio/tree/main/",
             "image":"image/portfolio.jpg", 
         },
-        "3",
+        {
+            "title":"NAXTINC furnitures",
+            "description":"A furniture website, built with React and CSS libraries such as Framer Motion and others, was created to sell furniture.",
+            "link":"https://naxtinc-furniture.netlify.app/",
+            "link2":"https://github.com/nicxd531/furniture_website",
+            "image":"image/furniture website .jpg", 
+        },
         '4',
         "5",
         "6"

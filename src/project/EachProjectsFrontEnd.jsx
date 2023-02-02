@@ -7,6 +7,13 @@ import HoverDescription from './HoverDescripton'
 const EachProjectFrontEnd  = ({projectSwitch}) => {
     const projectListFrontend=[
         {
+            "title":"bas insurance broker",
+            "description":"Insurance Website - A cutting-edge platform designed using React, SASS, and Bootstrap. Offers a comprehensive range of insurance options with an intuitive search function and real-time online quote generator. A showcase of my front-end development skills, technical knowledge, and commitment to creating user-centered experiences.",
+            "link":"https://bas-insurance-broker.netlify.app/",
+            "link2":"https://github.com/nicxd531/insurance",
+            "image":"image/insurance.PNG", 
+        },
+        {
             "title":"article blog for designers",
             "description":"This project is a professional blog website designed for designers to showcase their work and receive feedback from members of the community. Developed and designed by Ola Olasunkanmi, the site utilizes the React JavaScript library, various React frameworks, the AOS CSS animation library, and the Swiper JS library. The purpose of the website is to provide a platform for designers to share their creative talents and receive constructive criticism from other members of the design community.",
             "link":"https://designer-web-articles.netlify.app/",
@@ -27,7 +34,6 @@ const EachProjectFrontEnd  = ({projectSwitch}) => {
             "link2":"https://github.com/nicxd531/furniture_website",
             "image":"image/furniture website .jpg", 
         },
-        '4',
         "5",
         "6"
     ]

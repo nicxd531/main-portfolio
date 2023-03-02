@@ -4,41 +4,55 @@
   overflow: hidden;
   position: relative;
 }
+
 .skills .home-video video {
   width: 100vw;
   height: 929px;
 }
+
 .skills > div {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
 }
+
 .skills > div .sklils-intro h3 {
   font-size: 1.25rem;
   text-align: center;
   margin-top: 52px;
   text-transform: capitalize;
 }
+
 .skills > div .sklils-intro h3 em {
   color: #FBCA49;
   text-decoration: none;
   font-style: normal;
 }
+
 .skills > div .sklils-intro p {
   font-size: 13px;
   padding: 0 28px;
   margin-top: 22px;
   text-align: center;
 }
+
 .skills > div .circled-dots-skills {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .skills > div .circled-dots-skills > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .skills > div .circled-dots-skills > div > div {
   width: 15px;
   height: 15px;
@@ -46,25 +60,32 @@
   cursor: pointer;
   margin-top: 10px;
 }
+
 .skills > div .circled-dots-skills > div > div:first-child {
   margin-right: 11px;
 }
+
 .skills > div .circled-dots-skills > div > div:last-child {
   margin-left: 11px;
 }
+
 .skills > div .circled-dots-skills > div .skills-dot-false {
   background-color: #707070;
 }
+
 .skills > div .circled-dots-skills > div .skiils-dot {
   background-color: red;
 }
+
 .skills > div > div:last-child .top-languages {
   margin-top: 12px;
 }
+
 .skills > div > div:last-child .top-languages h2 {
   text-align: center;
   text-transform: uppercase;
 }
+
 .skills > div > div:last-child .top-languages .ul {
   margin: 0 auto;
   color: #000000;
@@ -73,15 +94,21 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+
 .skills > div > div:last-child .top-languages .li {
   background-color: #FAFAFA;
   border: 1px solid #707070;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
@@ -90,6 +117,7 @@
   grid-column: span 6;
   width: 160px;
 }
+
 .skills > div > div:last-child .top-languages .li h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -99,20 +127,27 @@
   font-weight: bold;
   text-align: center;
 }
+
 .skills > div > div:last-child .top-languages .li .content {
-  flex: 1 0 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
+
 .skills > div > div:last-child .top-languages .li .content p {
   font-size: 12px;
 }
+
 .skills > div > div:last-child .top-languages .avatar {
   width: 46px;
   height: 46px;
 }
+
 .skills > div > div:last-child .top-languages .avatar img {
   width: 100%;
   height: 100%;
 }
+
 .skills > div > div:last-child .top-languages .row {
   width: 100%;
   height: 8px;
@@ -192,7 +227,6 @@
   }
   .skills > div > div:last-child .OtherLiabries {
     position: absolute;
-    margin-top: -3%;
   }
   .skills > div > div:last-child .OtherLiabries .li {
     height: -webkit-fit-content;
@@ -211,4 +245,5 @@
   .skills > div > div:last-child .OtherLiabries > h2 {
     font-size: 2rem;
   }
-}/*# sourceMappingURL=skills.css.map */
+}
+/*# sourceMappingURL=skills.css.map */

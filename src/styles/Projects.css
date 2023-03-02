@@ -4,29 +4,43 @@
   overflow: hidden;
   position: relative;
 }
+
 .projects .home-video {
   width: 100vw;
   height: 776px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .projects .project-content {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
 }
+
 .projects .project-content > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 38px;
 }
+
 .projects .project-content > div:first-child > h1 {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
+
 .projects .project-content > div:first-child > hr {
   width: 63px;
   border: 1.5px solid #FBCA49;
@@ -35,17 +49,20 @@
   margin-left: 48%;
   margin-top: 0;
 }
+
 .projects .project-content > div:last-child {
   position: relative;
   width: 100%;
   height: 678px;
 }
+
 .projects .project-content > div:last-child > h1 {
   font-size: 40px;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -54,6 +71,7 @@
   top: 45%;
   display: inline-block;
 }
+
 .projects .project-content > div:last-child .each-projects {
   margin-left: 70px;
   width: 283px;
@@ -61,6 +79,7 @@
   position: relative;
   margin-top: 23px;
 }
+
 .projects .project-content > div:last-child .each-projects .each-project-frontEnd, .projects .project-content > div:last-child .each-projects .each-project-webDesign {
   width: 100%;
   height: 100%;
@@ -68,65 +87,92 @@
   top: 0;
   left: 0;
 }
+
 .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(1), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(1) {
   width: 133px;
   height: 216px;
-  grid-row: 1/span 2;
-  grid-column: 1/span 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/ span 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/ span 6;
 }
+
 .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(2), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(2) {
   width: 133px;
   height: 167px;
   grid-column: span 6;
 }
+
 .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(3), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(3) {
   width: 133px;
   height: 257px;
-  grid-row: 3/span 3;
-  grid-column: 1/span 6;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3 /span 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/ span 6;
 }
+
 .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(4), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(4) {
   width: 133px;
   height: 196px;
-  grid-row: 2/span 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/ span 3;
   grid-column: span 6;
 }
+
 .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(5), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(5) {
   width: 133px;
   height: 125px;
+  -ms-grid-row: 6;
   grid-row: 6;
   grid-column: span 6;
 }
+
 .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(6), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(6) {
   width: 133px;
   height: 246px;
-  grid-row: 5/span 2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5 /span 2;
   grid-column: span 6;
 }
+
 .projects .project-content > div:last-child .each-projects .projectSwitchTrue {
   visibility: visible;
   left: 0;
   opacity: 1;
+  -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
 }
+
 .projects .project-content > div:last-child .each-projects .projectSwitchFalse {
   visibility: hidden;
   left: 100%;
   opacity: 0;
+  -webkit-transition: left ease-out 0.5s;
   transition: left ease-out 0.5s;
+  -webkit-transition: visibility 0.7s;
   transition: visibility 0.7s;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section {
   border-radius: 8px;
   position: relative;
   overflow: hidden;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:first-child {
   height: 100%;
   width: 100%;
   border-radius: 8px;
   position: relative;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:first-child .hoverDescription {
   position: absolute;
   width: 100%;
@@ -134,38 +180,48 @@
   border-radius: 8px;
   opacity: 0;
   cursor: pointer;
+  -webkit-transition: all ease-in 0.5s;
   transition: all ease-in 0.5s;
   scale: 0.9;
+  -webkit-transition: scale ease-out 0.3s;
   transition: scale ease-out 0.3s;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:first-child .hoverDescription h2 {
   font-size: 1rem;
   margin-top: 15px;
   margin-left: 15px;
   text-transform: capitalize;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:first-child .hoverDescription p {
   font-size: 0.75rem;
   padding: 6px;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:first-child > a {
   width: 100%;
   height: 100%;
   border: 8px;
   overflow: hidden;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:first-child > a > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:first-child .hoverDescription:hover {
   opacity: 0.4;
+  -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
   scale: 1;
+  -webkit-transition: scale ease-out 0.3s;
   transition: scale ease-out 0.3s;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:nth-child(2) {
   width: 100%;
   height: 32px;
@@ -173,43 +229,66 @@
   bottom: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:nth-child(2) > div {
   width: 50%;
   height: 100%;
 }
+
 .projects .project-content > div:last-child .each-projects .project-section > div:nth-child(2) > div:hover {
-  transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
 }
+
 .projects .project-content > div:last-child .each-projects .circled-dots-project {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   bottom: -28px;
 }
+
 .projects .project-content > div:last-child .each-projects .circled-dots-project > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .projects .project-content > div:last-child .each-projects .circled-dots-project > div > div {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   cursor: pointer;
 }
+
 .projects .project-content > div:last-child .each-projects .circled-dots-project > div > div:first-child {
   margin-right: 11px;
 }
+
 .projects .project-content > div:last-child .each-projects .circled-dots-project > div > div:last-child {
   margin-left: 11px;
 }
+
 .projects .project-content > div:last-child .each-projects .circled-dots-project > div .project-dot-false {
   background-color: #707070;
 }
+
 .projects .project-content > div:last-child .pop_up {
   position: absolute;
   height: 550px;
@@ -218,21 +297,28 @@
   top: 8%;
   left: 55px;
   border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
+
 .projects .project-content > div:last-child .pop_up > div {
   width: 100%;
   height: 200px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+
 .projects .project-content > div:last-child .pop_up > div .pill {
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
+
 .projects .project-content > div:last-child .pop_up > div .pill .eachPill {
   display: inline-block;
   padding: 2px;
@@ -241,6 +327,7 @@
   text-transform: capitalize;
   position: relative;
 }
+
 .projects .project-content > div:last-child .pop_up > div .text {
   margin: 2px;
 }
@@ -257,11 +344,13 @@
     bottom: -60px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .projects .project-content > div:last-child > h1 {
     margin-left: 30px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .projects {
     height: 1040px;
@@ -292,38 +381,60 @@
   .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(1), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(1) {
     width: 260px;
     height: 423px;
-    grid-column: 1/span 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/ span 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
     grid-row: 1/span 3;
   }
   .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(2), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(2) {
     width: 260px;
     height: 328px;
-    grid-column: 4/span 3;
-    grid-row: 1/span 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/ span 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 /span 2;
   }
   .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(3), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(3) {
     width: 260px;
     height: 221px;
-    grid-column: 7/span 3;
-    grid-row: 1/span 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7/ span 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 /span 1;
   }
   .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(4), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(4) {
     width: 260px;
     height: 276px;
-    grid-column: 1/span 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/ span 3;
     grid-row: span 4;
   }
   .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(5), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(5) {
     width: 260px;
     height: 379px;
-    grid-column: 4/span 3;
-    grid-row: 3/span 5;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4/ span 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 5;
+    grid-row: 3/ span 5;
   }
   .projects .project-content > div:last-child .each-projects .each-project-frontEnd > div:nth-child(6), .projects .project-content > div:last-child .each-projects .each-project-webDesign > div:nth-child(6) {
     width: 260px;
     height: 483px;
-    grid-column: 7/span 3;
-    grid-row: 2/span 6;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7/ span 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 6;
+    grid-row: 2/ span 6;
   }
   .projects .project-content > div:last-child .each-projects .project-section > div:last-child {
     height: 71px;
@@ -342,4 +453,5 @@
     width: 26px;
     height: 26px;
   }
-}/*# sourceMappingURL=Projects.css.map */
+}
+/*# sourceMappingURL=Projects.css.map */

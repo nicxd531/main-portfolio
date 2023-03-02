@@ -2,24 +2,39 @@
   height: 1155px;
   width: 100vw;
 }
+
 .services > div {
   height: 1026px;
   width: 340px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
   grid-column: 2/span 10;
   margin-top: 20px;
   border-radius: 20px;
 }
+
 .services > div > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 23px;
 }
+
 .services > div > div:first-child h1 {
   font-size: 21px;
   text-transform: uppercase;
 }
+
 .services > div > div:first-child hr {
   margin: 0;
   width: 67px;
@@ -28,41 +43,68 @@
   border: 1.5px solid #FBCA49;
   margin-left: 30px;
 }
+
 .services > div .main-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .services > div .main-services .each-services {
   width: 190px;
   height: 279px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 8px;
   margin-top: 33px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 5px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .services > div .main-services .each-services > div:first-child {
   width: 68px;
   height: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
+
 .services > div .main-services .each-services > div:first-child img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .services > div .main-services .each-services > h1 {
   font-size: 17px;
   margin-top: 22px;
   text-transform: uppercase;
   text-align: center;
 }
+
 .services > div .main-services .each-services p {
   font-size: 0.625rem;
   text-align: center;
@@ -74,6 +116,7 @@
     width: 100%;
   }
 }
+
 @media screen and (min-width: 992px) {
   .services {
     height: -webkit-fit-content;
@@ -94,8 +137,12 @@
     width: 120px;
   }
   .services > div:first-child .main-services {
-    flex-direction: row;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 50px;
   }
   .services > div:first-child .main-services .each-services {
@@ -109,6 +156,7 @@
     font-size: 0.875rem;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .services {
     height: 772px;
@@ -146,4 +194,5 @@
   .services > div:first-child .main-services .each-services p {
     font-size: 0.875rem;
   }
-}/*# sourceMappingURL=Services.css.map */
+}
+/*# sourceMappingURL=Services.css.map */

@@ -7,6 +7,7 @@ const WhoAmI = () => {
         className="who-am-i">
             <div>
                 <h2>who am i ?</h2>
+                
                 <hr/>
             </div>
             <div>
@@ -18,7 +19,6 @@ const WhoAmI = () => {
                     I am an expert web developer with exceptional proficiency in utilizing a wide range of programming languages such as HTML, CSS, JavaScript, and React to create exceptional websites that are visually stunning and highly functional.    
                 </p>
             </div>
-
         </div>
      );
 }

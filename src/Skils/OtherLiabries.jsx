@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const OtherLiabries = () => {
     const [isOpen, setIsOpen] = useState(false);
-    console.log(isOpen)
     const list =[
         {
             "image":"image/scss.png",

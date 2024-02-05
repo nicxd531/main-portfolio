@@ -6,8 +6,7 @@ const SkillTags = () => {
     return ( 
         <div>
             <TopLanguages/>
-            <DesignTools/>
-            <OtherLiabries/>
+            
         </div>
     );
 }

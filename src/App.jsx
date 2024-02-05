@@ -6,6 +6,7 @@ import Skills from "./Skils/Skills"
 import Services from "./services/Services"
 import Projects from "./project/Projects"
 import Contact from "./contact/Contact"
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 

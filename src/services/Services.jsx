@@ -1,6 +1,7 @@
 import "../styles/Services.css"
 import MainServices from "./MainServices";
 const Services = () => {
+    // main services component
     return ( 
         <section id="servicesNav" className="services grid">
             <div>

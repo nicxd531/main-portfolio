@@ -1,10 +1,12 @@
+import { Avatar } from "@mui/material";
 import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 
+
 const TopLanguages = () => {
     const [isOpen, setIsOpen] = useState(false);
-    console.log(isOpen)
+   
     const list =[
         {
             "image":"image/html.png",
@@ -27,20 +29,20 @@ const TopLanguages = () => {
         {
             "image":"image/react.png",
             "title":"REACT",
-            "description":"eact is a JavaScript library for building user interfaces. It was developed by Facebook, and is often used for building single-page applications and mobile applications."
+            "description":"React is a JavaScript library for building user interfaces. It was developed by Facebook, and is often used for building single-page applications and mobile applications."
 
         }
     ]
    
     const main = list.map((data ,index)=>{
         return(
-            <motion.div
+            <div
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-delay="300" 
-            className="li " key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
-                <motion.div className="avatar" layout ><img src={data.image} alt={data.title}/></motion.div>
+            className="li d-flex justify-content-center align-items-center " key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
                 <h2>{data.title}</h2>
+                <Avatar sx={{ml:3}} src={data.image} alt="language image"/>
                 <AnimatePresence>
                     {isOpen===index && <motion.div
                         className="content"
@@ -52,17 +54,16 @@ const TopLanguages = () => {
                      <p> {data.description}</p>
                     </motion.div>}
                 </AnimatePresence>
-             </motion.div>
+             </div>
         )
     })
     return ( 
         <div className="top-languages TopLanguages">
             <h2>Top Languages</h2>
-            <LayoutGroup>
+            
                 <motion.div className="ul grid" layout >
                     {main}
                 </motion.div>
-            </LayoutGroup>
         </div>
      );
 }

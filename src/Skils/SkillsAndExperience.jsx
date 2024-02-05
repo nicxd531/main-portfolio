@@ -1,4 +1,5 @@
 const SkillsAndExperience = () => {
+    // main SkillsAndExperience component
     return ( 
         <div 
             data-aos="fade-up"

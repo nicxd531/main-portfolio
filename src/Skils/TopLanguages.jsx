@@ -1,10 +1,12 @@
-import { Avatar } from "@mui/material";
+import { Avatar, Paper } from "@mui/material";
 import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 
 
 const TopLanguages = () => {
+    // main TopLanguages component
+    // states for opening each tags 
     const [isOpen, setIsOpen] = useState(false);
    
     const list =[
@@ -36,13 +38,13 @@ const TopLanguages = () => {
    
     const main = list.map((data ,index)=>{
         return(
-            <div
+            <Paper
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-delay="300" 
             className="li d-flex justify-content-center align-items-center " key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
                 <h2>{data.title}</h2>
-                <Avatar sx={{ml:3}} src={data.image} alt="language image"/>
+                <Avatar sx={{ml:3}} src={data.image} alt="language image" variant="rounded"/>
                 <AnimatePresence>
                     {isOpen===index && <motion.div
                         className="content"
@@ -54,7 +56,7 @@ const TopLanguages = () => {
                      <p> {data.description}</p>
                     </motion.div>}
                 </AnimatePresence>
-             </div>
+             </Paper>
         )
     })
     return ( 

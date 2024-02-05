@@ -73,8 +73,6 @@
   width: fit-content;
 }
 .skills > div > div:last-child .top-languages .li {
-  background-color: #FAFAFA;
-  border: 1px solid #707070;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;

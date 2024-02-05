@@ -1,4 +1,5 @@
 const AboutImg = () => {
+    // main about image component
     return ( 
         <div 
         data-aos="fade-up"

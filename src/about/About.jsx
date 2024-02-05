@@ -4,6 +4,7 @@ import AboutInfo from "./AboutInfo";
 import WhoAmI from "./WhoAmI";
 
 const About = () => {
+    // main about component
     return ( 
         <section className="about" id="Aboutnav">
             <div>
@@ -13,8 +14,8 @@ const About = () => {
                 </div>
                 <AboutImg/>
                 <AboutInfo
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
                 />
                 <WhoAmI
                 data-aos="fade-up"

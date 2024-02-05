@@ -1,11 +1,9 @@
 .about {
   height: 950px;
   width: 100vw;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 30px;
 }
-
 .about > div:first-child {
   height: 900px;
   width: 335px;
@@ -13,18 +11,15 @@
   border-radius: 8px;
   margin-bottom: 30px;
 }
-
 .about > div:first-child > div:first-child {
   margin-left: 100px;
   margin-top: 23px;
   display: inline-block;
 }
-
 .about > div:first-child > div:first-child h1 {
   font-size: 38px;
   text-transform: capitalize;
 }
-
 .about > div:first-child > div:first-child > hr {
   width: 136px;
   background-color: #FBCA49;
@@ -33,109 +28,93 @@
   margin-left: 22px;
   border-radius: 8px;
 }
-
 .about > div:first-child .about-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .about > div:first-child .about-img div {
   width: 173px;
   height: 191px;
 }
-
 .about > div:first-child .about-img div:first-child {
   border: 6px solid #FBCA49;
   border-radius: 20px;
   margin: auto;
   margin-top: 43px;
-  -webkit-box-shadow: rgba(255, 248, 41, 0.15) 0px 15px 25px, rgba(255, 208, 39, 0.05) 0px 5px 10px;
-          box-shadow: rgba(255, 248, 41, 0.15) 0px 15px 25px, rgba(255, 208, 39, 0.05) 0px 5px 10px;
+  box-shadow: rgba(255, 248, 41, 0.15) 0px 15px 25px, rgba(255, 208, 39, 0.05) 0px 5px 10px;
 }
-
 .about > div:first-child .about-img div:last-child {
   border-radius: 20px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   left: 32%;
   margin-top: 40px;
 }
-
 .about > div:first-child .about-img div:last-child img {
   width: 120%;
   height: 120%;
 }
-
 .about .about-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 26px;
 }
-
 .about .about-info h2 {
   font-size: 1rem;
   margin-top: 16px;
   font-weight: normal;
   text-transform: capitalize;
 }
-
 .about .who-am-i > div:first-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 61px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
-
 .about .who-am-i > div:first-child > h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
-
 .about .who-am-i > div:first-child > hr {
-  width: 76px;
+  width: 50px;
   margin: 0;
   background-color: #FBCA49;
   border: 2px solid #FBCA49;
   margin-left: 22px;
   border-radius: 8px;
 }
-
+.about .who-am-i > div:last-child::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
+.about .who-am-i ::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 5px;
+}
+.about .who-am-i ::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 5px;
+}
+.about .who-am-i ::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the scrollbar thumb on hover */
+  border-radius: 5px;
+}
 .about .who-am-i > div:last-child {
   padding: 8px;
   text-align: center;
   margin-bottom: 23px;
+  height: 280px;
 }
-
 .about .who-am-i > div:last-child p {
   margin-top: 8px;
   font-weight: normal;
   font-size: 0.75rem;
   padding: 2px;
+  text-align: justify;
 }
 
 @media screen and (min-width: 992px) {
@@ -143,10 +122,8 @@
     min-width: 1127px;
     height: 687px;
     margin: auto;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     padding: 40px 60px;
   }
   .about > div:first-child > div:first-child,
@@ -160,12 +137,9 @@
   .about > div:first-child > div:first-child {
     width: 100%;
     display: inline-block;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 12;
-    grid-column: 5/ span 12;
+    grid-column: 5/span 12;
   }
   .about > div:first-child > div:first-child h1 {
     font-size: 48px;
@@ -175,14 +149,10 @@
     margin-left: 45px;
   }
   .about > div:first-child .about-img {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 3;
-    grid-row: 2/ span 3;
-    height: -webkit-fit-content;
+    grid-row: 2/span 3;
     height: -moz-fit-content;
     height: fit-content;
     position: relative;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin-left: 0;
@@ -201,24 +171,20 @@
     overflow: hidden;
   }
   .about > div:first-child .about-info {
-    -ms-grid-row: 2;
     grid-row: 2;
     width: 100%;
     display: inline-block;
     grid-column: span 7;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .about > div:first-child .about-info h2 {
-    font-size: 22px;
+    font-size: 18px;
     display: inline-block;
     width: 50%;
   }
   .about > div:first-child .who-am-i {
     grid-column: span 8;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    grid-row: 3/ span 2;
-    height: -webkit-fit-content;
+    grid-row: 3/span 2;
     height: -moz-fit-content;
     height: fit-content;
     margin-left: 71px;
@@ -227,19 +193,19 @@
     margin-top: 0;
   }
   .about > div:first-child .who-am-i > div > h2 {
-    font-size: 48px;
+    font-size: 30px;
     margin: 0;
   }
   .about > div:first-child .who-am-i > div hr {
-    width: 143px;
+    width: 180px;
     margin-left: 74px;
   }
   .about > div:first-child .who-am-i > div > p {
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 20px;
   }
   .about > div:first-child .who-am-i > div:last-child {
     text-align: left;
+    height: 200px;
   }
-}
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */

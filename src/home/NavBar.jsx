@@ -1,6 +1,7 @@
 import {Twirl as Hamburger} from "hamburger-react"
 import { useState } from "react";
 const NavBar = ({onScroll}) => {
+    // navbar main component
     const [isOpen, setOpen] = useState(false)
     return ( 
         <section  className={`navBar ${isOpen?"nav-firstchild-open" : "nav-firstchild-close"} ${onScroll?"nav-firstchild-open" : null}`} >
@@ -15,6 +16,7 @@ const NavBar = ({onScroll}) => {
                 <a href="#servicesNav">services</a>
                 <a href="#projectNav">projects</a>
                 <a href="#contactNav">contact</a>
+                <a href="#contactNav">blog</a>
             </div>
         </section>
      );

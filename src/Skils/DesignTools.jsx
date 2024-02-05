@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const DesignTools = () => {
     const [isOpen, setIsOpen] = useState(false);
-    console.log(isOpen)
+    
     const list = [
         {
             "image": "image/xd.png",

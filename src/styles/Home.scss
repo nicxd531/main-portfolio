@@ -187,7 +187,7 @@
                     color: $primary-colour;
                     transition: all 0.3s ease-out;
                 }
-                  a:focus::after{
+                  a:focus:active::after{
                     width: 50%;
                 }
             }

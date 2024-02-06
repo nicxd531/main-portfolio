@@ -3,7 +3,7 @@ import { BsFillTelephoneFill} from 'react-icons/bs'
 import { SiGmail} from 'react-icons/si'
 import { HiDownload} from 'react-icons/hi'
 const MainInput = () => {
-
+  // main contact input component
     return (
         <div className="main-input">
           <h3>message me</h3>

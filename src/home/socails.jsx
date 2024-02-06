@@ -23,8 +23,6 @@ const Socials = ({theme, setTheme}) => {
     onClick={()=>setTheme( "light")}
     />
     const videoIcon= playVid ? <BsFillPlayFill onClick={()=>{setplayVid(false),play()}} size={34}/> :<AiOutlinePause onClick={()=>{setplayVid(true), pause()}} size={34}/>
-
-    
     return ( 
         <div className='socials' style={{"display":"flex","flexDirection":"column"}}>
             <a>{themeIcon}</a>

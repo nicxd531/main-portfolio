@@ -8,8 +8,6 @@ import Projects from "./project/Projects"
 import Contact from "./contact/Contact"
 import { ThemeProvider,createTheme } from '@mui/material'
 import { orange } from '@mui/material/colors'
-
-
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 

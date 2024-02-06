@@ -12,27 +12,21 @@ const Intro = () => {
        const fetchGreeting = async () => {
        try {
            const response = await fetch('https://www.greetingsapi.com/random');
-           
            if (!response.ok) {
            throw new Error('Failed to fetch greeting');
            }
-
            const data = await response.json();
            setGreeting(data.greeting);
        } catch (error) {
            console.error('Error fetching greeting:', error.message);
        }
        };
-
        // Fetch a new greeting every 10 seconds
        const intervalId = setInterval(() => {
        fetchGreeting();
        }, 10000);
    }
    , []);
-
-    
-    
     return ( 
         <div className="intro">
             <h3>

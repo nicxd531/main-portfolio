@@ -6,7 +6,6 @@ import InsetList from "./InsetList";
 
 const OtherLiabries = () => {
     // main component foe other libraries 
-    
     const software =[
         {
             "image":"image/scss.png",

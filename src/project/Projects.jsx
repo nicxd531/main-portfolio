@@ -25,5 +25,4 @@ const Projects = ({theme}) => {
         </section>
      );
 }
- 
 export default Projects;

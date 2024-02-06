@@ -1,12 +1,12 @@
 .skills {
   width: 100vw;
-  height: 1000px;
+  height: 1420px;
   overflow: hidden;
   position: relative;
 }
 .skills .home-video video {
   width: 100vw;
-  height: 929px;
+  height: 1400px;
 }
 .skills > div {
   position: absolute;

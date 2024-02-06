@@ -5,7 +5,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import StarIcon from '@mui/icons-material/Star';
-import { Avatar } from '@mui/material';
+import { Avatar, Box } from '@mui/material';
 
 export default function InsetList({data}) {
   //  main items component
@@ -16,14 +16,16 @@ export default function InsetList({data}) {
     >
      { data.map((data,index)=>{
         return(
-        <ListItem key={index} disablePadding sx={{mt:2}}>
+        <ListItem key={index} disablePadding sx={{mt:2,width:"300px"}}>
             <ListItemButton>
             <ListItemIcon>
                 <StarIcon />
             </ListItemIcon>
-            <ListItemText primary={data.title} />
+            <Box sx={{display:"flex",width:"100%",flexWrap:"wrap",flexDirection:"row"}}>
+              <ListItemText primary={data.title} />
+              <Avatar src={data.image} variant="rounded" sx={{width: 24, height: 24}}/>
+            </Box>
             </ListItemButton>
-            <Avatar src={data.image} variant="rounded" sx={{width: 24, height: 24}}/>
       </ListItem>
         )
      })}

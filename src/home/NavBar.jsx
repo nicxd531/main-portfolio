@@ -4,7 +4,7 @@ const NavBar = ({onScroll}) => {
     // navbar main component
     const [isOpen, setOpen] = useState(false)
     return ( 
-        <section  className={`navBar ${isOpen?"nav-firstchild-open" : "nav-firstchild-close"} ${onScroll?"nav-firstchild-open" : null}`} >
+        <section style={{zIndex:1200}} className={`navBar ${isOpen?"nav-firstchild-open" : "nav-firstchild-close"} ${onScroll?"nav-firstchild-open" : null}`} >
             <div>
             <h1>portfolio</h1>
             <Hamburger toggled={isOpen} toggle={setOpen}/>

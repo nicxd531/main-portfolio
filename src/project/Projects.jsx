@@ -1,35 +1,26 @@
+import { Paper, Typography } from "@mui/material";
 import HomeVideoBg from "../home/HomeVideoBg";
 import "../styles/Projects.css"
-import EachProjectFrontEnd from "./EachProjectsFrontEnd";
-import EachProjectsWebDesign from "./EachProjectsWebDesign";
 import { useState } from "react";
+import EachProjectFrontEnd from "./EachProjectsFrontEnd";
 
 const Projects = ({theme}) => {
-    const [ projectSwitch, setProjectSwitch] = useState(false)
-    
+    // main project component
     return ( 
         <section id="projectNav" className="projects">
             <HomeVideoBg lightMode={"/video/light-mode-project-video.mp4"} darkMode={"/video/dark-mode-project-video.mp4"} theme={theme}/>
-            <div className="project-content">
-                <div>
-                    { projectSwitch ? <h1>small time projects </h1> : <h1>frontend</h1>}
+            <h1 className="project-logo">project's</h1>
+            <div className="project-content" style={{width:"100%"}}>
+                <Paper sx={{width:"80%",margin:"auto",height:{xs:"987",lg:"95%"},p:2,boxSizing:"border-box",mt:3}}>
+                <div className="introd">
+                     <h1>SOFTWARE DEVELOPMENT</h1>
                     <hr/>
+                    <Typography>this section contains projects developed with diffrent stack with their explanation and aso indicating their usage and benefits</Typography>
                 </div>
-                <div>
-                    <h1>project's</h1>
-                    <div className="each-projects">
-                        <EachProjectFrontEnd  projectSwitch={projectSwitch} />
-                        <EachProjectsWebDesign  projectSwitch={projectSwitch}/>
-                        <div className="circled-dots-project">
-                            <div>
-                                <div onClick={()=>setProjectSwitch(false)} className={`${projectSwitch ?"project-dot-false" :"project-dot-true"}`}></div>
-                                <div onClick={()=>setProjectSwitch(true)} className={`${projectSwitch ? "project-dot-true" : "project-dot-false"}`}></div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
+                <div> 
+                     <EachProjectFrontEnd/>
                 </div>
+                </Paper>
             </div>
         </section>
      );

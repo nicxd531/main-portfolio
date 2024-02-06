@@ -1,69 +1,122 @@
-import { FaGithub} from 'react-icons/fa'
-import { FiLink2} from 'react-icons/fi'
-import HoverDescription from './HoverDescripton'
+import React, { useRef, useState } from 'react';
+import { Box, Button, Chip, Divider, Typography } from "@mui/material";
+import DeleteIcon from '@mui/icons-material/Delete';
+import SendIcon from '@mui/icons-material/Send';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+// import required modules
+import { Autoplay, Pagination } from 'swiper/modules';
+import LaptopIcon from '@mui/icons-material/Laptop';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import data from "./data.json"
+import Pg from '../Skils/Pg';
 
+const EachProjectFrontEnd  = () => {
+    //main each project component
+    const swiperParams = {
+        loop: true, // Enable looping
+        autoplay: {
+          delay: 3000, // Set autoplay delay to 3 seconds
+          disableOnInteraction: false, // Continue autoplay even when user interacts
+        },
+      };
 
-
-const EachProjectFrontEnd  = ({projectSwitch}) => {
-    const projectListFrontend=[
-        {
-            "title":"bas insurance broker",
-            "description":"Insurance Website - A cutting-edge platform designed using React, SASS, and Bootstrap. Offers a comprehensive range of insurance options with an intuitive search function and real-time online quote generator. A showcase of my front-end development skills, technical knowledge, and commitment to creating user-centered experiences.",
-            "link1":"https://bas-insurance-broker.netlify.app/",
-            "link2":"https://github.com/nicxd531/insurance",
-            "image":"image/insurance.PNG", 
-        },
-        {
-            "title":"article blog for designers",
-            "description":"This project is a professional blog website designed for designers to showcase their work and receive feedback from members of the community. Developed and designed by Ola Olasunkanmi, the site utilizes the React JavaScript library, various React frameworks, the AOS CSS animation library, and the Swiper JS library. The purpose of the website is to provide a platform for designers to share their creative talents and receive constructive criticism from other members of the design community.",
-            "link1":"https://designer-web-articles.netlify.app/",
-            "link2":"https://github.com/nicxd531/article-website--for-designers-",
-            "image":"image/articleblog.jpg", 
-        },
-        {
-            "title":"portfolio",
-            "description":"This is a professional portfolio website for Ola Olasunkanmi. It was constructed utilizing the React JavaScript library, the AOS animation library and various React extensions. The website serves as a digital showcase of Ola's skills and work experience, providing an easy to navigate and visually stunning platform for potential clients and employers to view Ola's portfolio. The utilization of the React JavaScript library, AOS animation library and other React extensions provides the website with a high level of functionality and interactivity.",
-            "link1":"https://designer-web-articles.netlify.app/",
-            "link2":"https://github.com/nicxd531/main-portfolio/tree/main/",
-            "image":"image/portfolio.jpg", 
-        },
-        {
-            "title":"NAXTINC furnitures",
-            "description":"A furniture website, built with React and CSS libraries such as Framer Motion and others, was created to sell furniture.",
-            "link1":"https://naxtinc-furniture.netlify.app/",
-            "link2":"https://github.com/nicxd531/furniture_website",
-            "image":"image/furniture website .jpg", 
-        },
-        "5",
-        "6"
-    ]
-    
-    
-    const frontEndMap = projectListFrontend.map((data,index)=>{
-        return(
-            <div 
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-delay="300" 
-            key={index} className="project-section">
-                <div >
-                    <HoverDescription description={data.description} title={data.title} link={data.link}/>
-                    <a  href={data.link1}>
-                        <img src={data.image} alt={data.title}/>
-                    </a>
-                </div>
-                
-                <div>
-                    <a href={data.link2}><div><FaGithub size={24}/></div></a>
-                    <a href={data.link1}><div><FiLink2 size={24}/></div></a>
-                </div>
-            </div>
-        )
-    })
+// states for current page 
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 2; // Set the number of items per page
+  // const forlisting required pages 
+  const totalPages = Math.ceil(data.length / itemsPerPage);
+  // data slicing constant for items on each page
+  const currentData = data.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
     return ( 
-        <div className={`each-project-frontEnd grid ${ projectSwitch? "projectSwitchFalse" : "projectSwitchTrue"}`}>
-            {frontEndMap}
-        </div>
+        <Box sx={{mt:1,}}>
+           { currentData &&currentData.map((data,index)=>{
+             const {title,description1,description2,link1,link2,image,stacks,benefits,features}=data
+            console.log(data)
+            return(
+                <Box key={index} sx={{mt:{xs:1,lg:5}}} data-aos="zoom-in" data-aos-duration="1000">
+                    <Divider variant="inset"sx={{margin:"auto"}}/>
+                    <Box sx={{display:"flex",mt:2,flexDirection:{xs:"column",lg:"row"}}}>
+                        <Box sx={{width:{xs:"100%",lg:"40%"},height:{xs:"200px",lg:"300px"}}}>
+                            <Swiper
+                            {...swiperParams}
+                                direction={'vertical'}
+                                pagination={{
+                                clickable: true,
+                                }}
+                                modules={[Pagination,Autoplay]}
+                                style={{borderRadius:"5px",borderTop:"1px solid grey",borderBottom:"1px solid grey"}}
+                                className="mySwiper"
+                            >
+                                { image && image.map((data,index)=>{
+                                    console.log(data)
+                                    return(
+                                        <SwiperSlide key={index} ><img src={data} alt="image" /></SwiperSlide>
+                                    )
+                                })}
+                                
+                            </Swiper>
+                            <Divider variant="inset"sx={{margin:"auto"}}/>
+                            <Box sx={{mt:1}}>
+                                {stacks.map((data,index)=>{
+                                    return(
+                                        <Box sx={{display:"inline"}}>
+                                            <Chip label={data} size="small" sx={{ml:1}}/>
+                                        </Box>
+                                    )
+                                })}
+                                
+                            </Box>
+                        </Box>
+                    <Divider  orientation="vertical" sx={{mx:2,height:"300px",display:{xs:"none",lg:"block"}}}/>
+                    <Divider   sx={{height:"70px",display:{lg:"none"},width:"100%"}}/>
+                <Box sx={{width:{xs:"80%",lg:"58%"}}}>
+                    <Box className="scroll" sx={{height:"300px",width:{xs:"130%",lg:"100%"},overflow:"auto"}}>
+                        <Typography variant="h4" sx={{fontWeight:"bold"}}>{title}</Typography>
+                        <Box >
+                            <Typography sx={{textAlign:"justify"}}>{description1}</Typography>
+                            <Typography sx={{textAlign:"justify",mt:1}}>{description2}</Typography>
+                            <Box sx={{ml:3}}>
+                            <ul style={{marginTop:"5px"}}>
+                            <li style={{fontWeight:"bold",fontSize:"12px",textDecoration:"none"}}>Benefits</li>
+                               { benefits.map((data,index)=>{
+                                return(
+                                    <li key={index} style={{fontSize:"12px",textDecoration:"none"}}>{data}</li>
+                                )
+                               })}
+                            </ul>
+                            <ul style={{marginTop:"5px"}}>
+                                <li style={{fontWeight:"bold",fontSize:"12px",textDecoration:"none"}}>Special features</li>
+                                { features.map((data,index)=>{
+                                return(
+                                    <li key={index} style={{fontSize:"12px",textDecoration:"none"}}>{data}</li>
+                                )
+                               })}
+                            </ul>
+                            </Box>
+                        </Box>
+                    </Box>
+                    <Box sx={{display:"flex",justifyContent:"flex-end",width:"100%",mt:{xs:2,lg:1}}}>
+                        <Button href={link1} variant="contained" startIcon={<LaptopIcon />}>
+                            LIVE-DEMO
+                        </Button>
+                        <Button href={link2} sx={{ml:1}} variant="contained" endIcon={<GitHubIcon />}>
+                            GITHUB
+                        </Button>
+                    </Box>
+                </Box>
+            </Box>
+            </Box>
+            )
+           })}
+           <Pg totalPages={totalPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+        </Box>
      );
 }
  

@@ -7,7 +7,7 @@ const MainInput = () => {
     return (
         <div className="main-input">
           <h3>message me</h3>
-          <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" netlify>
+          <form name="contact"   netlify>
             <input 
             required
             name='name'

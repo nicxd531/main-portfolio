@@ -23,7 +23,7 @@ Ola Olasunkanmi's professional web portfolio stands as a testament to his dedica
 - [Folder Structure](#folder-structure)
 - [Features](#features)
 - [Deployment](#deployment)
-- [Built With](#built-with)
+- [Developed Using](#Developed-Using)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
@@ -67,10 +67,10 @@ cd MAIN-PORTFOLIO (change directory in to the location of the folder in your pc 
 # Install dependencies
 npm install (installs all dependencies used in the project)
 
-Usage
+# Usage
 the project and application is mainly for job application purpose and also an oppurtunity to showcase my skills as a software developer.
 
-Folder Structure
+# Folder Structure
 this contains an explainantion of the main folder structure in the project
 public/               # Public assets
 |-- files/           # pdf file folder
@@ -100,19 +100,19 @@ Experience Overview: Ola's professional journey is meticulously detailed, showca
 Complete Profile: The portfolio provides a complete profile of Ola, including his educational background, certifications, and professional affiliations.
 Contact Information: Ola's contact details are readily accessible, facilitating seamless communication for potential job opportunities, collaboration, or inquiries.
 
-Deployment
+# Deployment
 To deploy a React application built in an npm environment, begin by ensuring that your project is properly configured and dependencies are installed. Run the necessary build command, typically 'npm run build', to generate the production-ready files. Once the build is successful, you can use a hosting service like Netlify, Vercel, or deploy it manually to a server. Ensure that the server is set up to serve the static files generated in the 'build' folder. Update any necessary environment variables for production settings, and your React application should be ready for deployment. Don't forget to test thoroughly in the production environment to ensure a smooth and error-free deployment.
 
 
-Developed Using
+# Developed Using
 Vite - Employed as the web development build tool
 React - Utilized as the JavaScript framework
 ...
-Contributing
+# Contributing
 unfortunately contributing is currently unavailable
 
-License
+# License
 This project is licensed under the OLA OLASUNKANMI - see the LICENSE.md file for details(if the file exist 😅).
 
-Acknowledgments
+# Acknowledgments
 i just want to say a big thank you to myself finishing this project was a bit hectic due to how complicated it is ,i also wnt to say a big thank you to the react ,vite teams for making this framework possibele and also everyone that created the libraries that was used in this project God bless you all.

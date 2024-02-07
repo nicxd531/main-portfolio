@@ -58,13 +58,13 @@
 
 .projects {
   width: 100vw;
-  height: 3776px;
+  height: 1550px;
   overflow: hidden;
   position: relative;
 }
 .projects .home-video {
   width: 100vw;
-  height: 3776px;
+  height: 1550px;
   -o-object-fit: cover;
      object-fit: cover;
 }

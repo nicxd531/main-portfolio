@@ -103,7 +103,7 @@ const OtherLiabries = () => {
                         <Chip label="OTHER TOOLS" size="large" />
                     </Divider>
                 </Box>
-            <Box>
+                <Box> 
                     <InsetList data={design}/>
                 </Box>
            </Box>

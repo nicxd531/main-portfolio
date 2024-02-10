@@ -85,11 +85,11 @@ src/                  # Source code
 |-- skills/           # the skills section component folder 
 |-- styles/           # styles (scss and css) folders
 App.jsx             # components for routing  
-Index.jsx             # socket io components 
+Index.css             # main css file 
 main.jsx            # main component
 index.html            # main index file
-package-lock.json     # socket io components 
-package.json          # socket io components 
+package-lock.json     # manifest for Node.js projects
+package.json          # lock file that keeps track of the exact versions of dependencies that were installed 
 vite.config.js        # Vite configuration file
 
 ### Features

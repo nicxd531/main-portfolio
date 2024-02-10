@@ -40,10 +40,10 @@ const EachProjectFrontEnd  = () => {
              const {title,description1,description2,link1,link2,image,stacks,benefits,features}=data
             console.log(data)
             return(
-                <Box key={index} sx={{mt:{xs:1,lg:5}}} data-aos="zoom-in" data-aos-duration="1000">
+                <Box key={index} sx={{mt:{xs:0,lg:5}}} data-aos="zoom-in" data-aos-duration="1000">
                     <Divider variant="inset"sx={{margin:"auto"}}/>
                     <Box sx={{display:"flex",mt:2,flexDirection:{xs:"column",lg:"row"}}}>
-                        <Box sx={{width:{xs:"100%",lg:"40%"},height:{xs:"200px",lg:"300px"}}}>
+                        <Box sx={{width:{xs:"100%",lg:"40%"},height:{xs:"190px",lg:"300px"}}}>
                             <Swiper
                             {...swiperParams}
                                 direction={'vertical'}
@@ -67,7 +67,7 @@ const EachProjectFrontEnd  = () => {
                                 {stacks.map((data,index)=>{
                                     return(
                                         <Box sx={{display:"inline"}}>
-                                            <Chip label={data} size="small" sx={{ml:1}}/>
+                                            <Chip label={data} size="small" sx={{ml:{xs:0.1,lg:1},mb:{xs:1}}}/>
                                         </Box>
                                     )
                                 })}
@@ -75,8 +75,8 @@ const EachProjectFrontEnd  = () => {
                             </Box>
                         </Box>
                     <Divider  orientation="vertical" sx={{mx:2,height:"300px",display:{xs:"none",lg:"block"}}}/>
-                    <Divider   sx={{height:"70px",display:{lg:"none"},width:"100%"}}/>
-                <Box sx={{width:{xs:"80%",lg:"58%"}}}>
+                    <Divider   sx={{height:"70px",display:{lg:"none"},width:"100%",mt:1}}/>
+                <Box sx={{width:{xs:"80%",lg:"58%"},}}>
                     <Box className="scroll" sx={{height:"300px",width:{xs:"130%",lg:"100%"},overflow:"auto"}}>
                         <Typography variant="h4" sx={{fontWeight:"bold"}}>{title}</Typography>
                         <Box >
@@ -102,7 +102,7 @@ const EachProjectFrontEnd  = () => {
                             </Box>
                         </Box>
                     </Box>
-                    <Box sx={{display:"flex",justifyContent:"flex-end",width:"100%",mt:{xs:2,lg:1}}}>
+                    <Box sx={{display:{xs:"none",lg:"flex"},justifyContent:{xs:"center",lg:"flex-end"},width:"100%",mt:{xs:2,lg:1},textAlign:"center"}}>
                         <Button href={link1} variant="contained" startIcon={<LaptopIcon />}>
                             LIVE-DEMO
                         </Button>
@@ -111,7 +111,15 @@ const EachProjectFrontEnd  = () => {
                         </Button>
                     </Box>
                 </Box>
-            </Box>
+                <Box sx={{display:{xs:"flex",lg:"none"},justifyContent:{xs:"center",lg:"flex-end"},width:"100%",mt:{xs:2,lg:1},textAlign:"center"}}>
+                    <Button href={link1} variant="contained" startIcon={<LaptopIcon />}>
+                        LIVE-DEMO
+                    </Button>
+                    <Button href={link2} sx={{ml:1}} variant="contained" endIcon={<GitHubIcon />}>
+                        GITHUB
+                    </Button>
+                </Box>
+                </Box>
             </Box>
             )
            })}

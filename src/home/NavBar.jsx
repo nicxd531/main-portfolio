@@ -16,7 +16,7 @@ const NavBar = ({onScroll}) => {
                 <a href="#servicesNav">services</a>
                 <a href="#projectNav">projects</a>
                 <a href="#contactNav">contact</a>
-                <a href="#contactNav">blog</a>
+                <a href="https://olaolasunkanmi.hashnode.dev/">blog</a>
             </div>
         </section>
      );

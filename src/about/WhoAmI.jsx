@@ -13,20 +13,24 @@ const WhoAmI = () => {
             </div>
             <div style={{overflow:"auto",marginTop:"15px"}}>
                 <p>
-                    Hi i am a web developer from Lagos,Nigeria
+                    Hi i am a software developer from Lagos,Nigeria
                 </p>
                 <p>
-                    As a front-end developer hailing from Lagos, Nigeria, I bring a unique perspective to the table. I am a firm believer in the mobile-first approach and am constantly pushing the boundaries of what is possible on small screens. My problem-solving skills are top-notch and I am a master of React. When I'm not coding, you can find me exploring new technologies and expanding my skillset. Let's create something truly innovative and awe-inspiring together!
+                I am a highly skilled and experienced software developer based in Lagos, Nigeria, with a passion for innovation and a dedication to delivering exceptional results in the field of software development. With a focus on leveraging cutting-edge technologies and frameworks, I specialize in crafting robust and scalable solutions that drive business growth and exceed client expectations.
                 </p>
                 <p>
-                    I am an expert web developer with exceptional proficiency in utilizing a wide range of programming languages such as HTML, CSS, JavaScript, and React to create exceptional websites that are visually stunning and highly functional.    
+                My expertise lies in utilizing React.js, HTML, CSS, and JavaScript to develop dynamic and immersive software applications. By staying abreast of industry trends and continuously enhancing my skills, I ensure that every project is executed with precision and delivers maximum impact.
                 </p>
-                <p>As a highly skilled and experienced front-end developer based in Lagos, Nigeria, I bring a unique perspective and a passion for innovation to the web development industry. I specialize in utilizing my expertise in React and proficiency in HTML, CSS, and JavaScript to create visually stunning and highly functional websites that meet the needs of users and exceed the expectations of clients.</p>
-
-                <p >I am a firm believer in the mobile-first approach, constantly pushing the boundaries of what is possible on small screens and utilizing my problem-solving skills to deliver cutting-edge solutions. I am always expanding my skillset and staying up-to-date with the latest technologies to stay ahead of the curve in the ever-evolving field of web development.</p>
-
-                <p >Let's work together to bring your vision to life and create something truly awe-inspiring. My approach to web development is characterized by collaboration, open communication, and a commitment to meeting the unique needs of each client. Here are just a few of the many services I offer:</p>
-
+                <p>With a collaborative approach and a commitment to excellence, I offer a range of services tailored to meet the unique needs of each client. From custom software development to ongoing maintenance and support, I am dedicated to helping businesses thrive in today's competitive landscape.</p>
+                <p>Here's a glimpse of the services I offer:</p>
+                <ul>
+                <li> 🔹 Custom software development using React, HTML, CSS, and JavaScript.</li>
+                <li> 🔹 Agile development methodologies for efficient project delivery.</li>
+                <li>🔹 Expertise in crafting robust and scalable software applications.</li>
+                <li> 🔹 Ongoing skills enhancement to stay ahead in the rapidly evolving software development landscape.</li>
+                <li> 🔹 Collaborative approach with open communication to align with client objectives.</li>
+                <li> 🔹 Maintenance, support, and optimization services for long-term success.</li>
+                </ul>
                 <p >-Custom website development using the latest technologies and frameworks such as React, HTML, CSS, and JavaScript.</p>
                 <p>
                     <ul>

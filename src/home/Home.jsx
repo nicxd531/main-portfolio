@@ -5,7 +5,10 @@ import NavBar from "./NavBar";
 import Socials from "./socails";
 import {FaAngleUp} from 'react-icons/fa'
 import { useState ,useEffect } from "react";
+
 const Home = ({theme, setTheme}) => {
+    // main home component
+    // state and on scroll function
     const [showTopBtn, setShowTopBtn] = useState(false)
     const goToTop=()=>{
         window.scrollTo({
@@ -15,7 +18,7 @@ const Home = ({theme, setTheme}) => {
     }
     useEffect(() => {
       window.addEventListener('scroll',()=>{
-        if(window.scrollY > 300) {
+        if(window.scrollY > 100) {
             setShowTopBtn(true);
         }else{
             setShowTopBtn(false)

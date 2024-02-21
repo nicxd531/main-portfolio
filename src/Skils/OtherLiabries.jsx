@@ -1,81 +1,113 @@
+import { Box, Paper, Typography ,Divider,Chip} from "@mui/material";
 import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import InsetList from "./InsetList";
 
 
 const OtherLiabries = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    console.log(isOpen)
-    const list =[
+    // main component foe other libraries 
+    const software =[
         {
             "image":"image/scss.png",
-            "title":"SASS",
-            "description":"Sass is a stylesheet language that extends CSS with features such as variables, nested rules, and mixins. It allows you to write more organized and maintainable CSS code, and can help to improve the workflow of web development projects."
-
-        },
+            "title":"SASS" 
+       },
         {
             "image":"image/material ui.png",
-            "title":"MATERIAL UI",
-            "description":"Material-UI is a popular React UI framework that provides a set of reusable React components that implement Google's Material Design guidelines. It is designed to make it easy for developers to build beautiful and consistent user interfaces."
-
+            "title":"MATERIAL UI"
         },
         {
             "image":"image/tailwind-css-icon.png",
-            "title":"TAILWIND",
-            "description":"Tailwind CSS is a utility-first CSS framework that is designed to make it easy to build custom user interfaces. It provides a set of low-level utility classes that you can use to build complex styles without the need to write custom CSS.Unlike other CSS frameworks that provide a set of predefined "
-
+            "title":"TAILWIND"
         },
         {
             "image":"image/icons8-bootstrap-480.png",
-            "title":"BOOTSTRAP",
-            "description":"Bootstrap is a popular HTML, CSS, and JavaScript framework for building responsive, mobile-first websites. It was developed by Twitter, and is one of the most widely used front-end frameworks for web development."
-
+            "title":"BOOTSTRAP"
         },
         {
             "image":"image/framer-motion-seeklogo.com.svg",
-            "title":"FRAMER MOTION",
-            "description":"Framer Motion is a popular open-source animation library for React that is designed to make it easy to create complex and beautiful animations for your React projects. It is based on the Animations API provided by the Framer library, and provides a simple and intuitive interface for building animations."
-
+            "title":"FRAMER MOTION"
         },
         {
             "image":"image/react.png",
             "title":"REACT",
-            "description":"React allows developers to create reusable UI components, which can help to make code more modular and easier to maintain. It uses a virtual DOM (Document Object Model) to optimize updates to the actual DOM, which can help to improve the performance of applications."
+        },
+        {
+            "image":"image/firebase.png",
+            "title":"FIREBASE",
+        },
+        {
+            "image":"image/socket-io.png",
+            "title":"SOCKET.IO",
+        },
+        {
+            "image":"image/redux.png",
+            "title":"REDUX",
+        },
+    ]
+    const design = [
+        {
+            "image": "image/xd.png",
+            "title": "ADOBE XD",
+            "description": "Adobe XD is a user experience design tool developed by Adobe that is used to create high-fidelity prototypes of websites and mobile applications. It is part of the Adobe Creative Cloud suite of design tools, and is often used by designers to create wireframes, mockups, and interactive prototypes of user interfaces."
+
+        },
+        {
+            "image": "image/photoshop.png",
+            "title": " PHOTOSHOP",
+            "description": "Adobe Photoshop is a popular image editing software developed and published by Adobe. It is used by photographers, graphic designers, and artists to create and manipulate digital images."
+
+        },
+        {
+            "image": "image/figma.png",
+            "title": "FIGMA",
+            "description": "Figma is a cloud-based design and prototyping tool that is used to create user interfaces, websites, and mobile applications. It is a popular choice among designers due to its ability to support real-time collaboration and its cross-platform compatibility."
+
+        },
+        {
+            "image": "image/illustrator.png",
+            "title": "ILLUSTRATOR",
+            "description": "Adobe Illustrator is a popular vector graphics editor developed and published by Adobe. It is used by graphic designers, artists, and illustrators to create and edit vector graphics such as logos, icons, and illustrations."
 
         }
     ]
-   
-    const main = list.map((data ,index)=>{
-        return(
-            <motion.div 
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-delay="350"
-            className="li " key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
-                <motion.div className="avatar" layout ><img src={data.image} alt={data.title}/></motion.div>
-                <h2>{data.title}</h2>
-                <AnimatePresence>
-                    {isOpen===index && <motion.div
-                        className="content"
-                        layout
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                    >
-                     <p> {data.description}</p>
-                    </motion.div>}
-                </AnimatePresence>
-             </motion.div>
-        )
-    })
+   const soft1=software.slice(0,5)
+   const soft2=software.slice(5,10)
+    
     return ( 
-        <div className="top-languages OtherLiabries">
-            <h2>Other Liabries</h2>
-            <LayoutGroup>
-                <motion.div className="ul grid" layout >
-                    {main}
-                </motion.div>
-            </LayoutGroup>
-        </div>
+        <Paper sx={{width:"90%",margin:"auto",mt:4,height:{xs:"950px",lg:"400px"},p:4,boxSizing:"border-box",display:"flex",flexDirection:{xs:"column",lg:"row"}}}>
+           <Box  sx={{width:"33%",display:"flex",flexDirection:"column"}}>
+                <Box sx={{width:{xs:"300px",lg:"100%"}}}>
+                    <Divider variant="inset" sx={{margin:"auto"}}>
+                        <Chip label="SOFTWARE DEVELOPMENT" size="large" />
+                    </Divider>
+                </Box>
+                <Box>
+                    <InsetList data={soft1}/>
+                </Box>
+           </Box>
+           <Divider orientation="vertical" flexItem sx={{mx:2}}/>
+           <Box   sx={{width:"33%",display:"flex",flexDirection:"column"}}>
+                <Box sx={{width:{xs:"300px",lg:"100%"}}}>
+                    <Divider variant="inset" sx={{margin:"auto"}}> 
+                        <Chip label="SOFTWARE DEVELOPMENT" size="large" />
+                    </Divider>
+                </Box>
+                <Box>
+                    <InsetList data={soft2}/>
+                </Box>
+           </Box>
+           <Divider orientation="vertical" flexItem sx={{mx:2}}/>
+           <Box  sx={{width:"33%",display:"flex",flexDirection:"column"}}>
+                <Box sx={{width:{xs:"300px",lg:"100%"}}}>
+                    <Divider  variant="inset" sx={{margin:"auto"}}>
+                        <Chip label="OTHER TOOLS" size="large" />
+                    </Divider>
+                </Box>
+                <Box> 
+                    <InsetList data={design}/>
+                </Box>
+           </Box>
+        </Paper>
      );
 }
  

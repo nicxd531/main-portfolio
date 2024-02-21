@@ -1,21 +1,22 @@
 import { useState } from "react"
 const MainServices = () => {
+    // main services component 
     const [hover, sethover] = useState(1)
     const services=[
         {
             image:"image/programming.png",
-            title:"web development",
-            desc:"creation of visible parts of a website and application using web languages such as javascript ,html and css with the use of knowledge on javascript liabries such as react and jquery."
+            title:"SOFTWARE DEVELOPMENT",
+            desc:"Software development is the systematic process of designing, coding, testing, and maintaining software systems to meet specific objectives or requirements. It involves a structured approach to creating computer programs or applications, encompassing various stages such as analysis, design, implementation, testing, and maintenance"
         },
         {
             image:"image/app-development.png",
-            title:"RESPONSIVE DESIGN",
-            desc:"creation of web designs and application designs that can adapt to any reading device used by a useer ,with the use of html and css to make it presentable based on the device size."
+            title:"WEB DEVELOPMENT",
+            desc:"creation of visible parts of a website and application using web languages such as javascript ,html and css with the use of knowledge on javascript liabries such as react.js and next.js."
         },
         {
             image:"image/art.png",
-            title:"GRAPHIC DESIGN",
-            desc:"basic knoweledge in graphic design and also knowledge in the use of apps such as adobe photoshop ,adobe illustrator and figma used in creating amazing user interface."
+            title:"UI/UX BASICS ",
+            desc:"UI/UX basics refer to the fundamental principles of User Interface (UI) design, focusing on the visual elements and aesthetics, and User Experience (UX) design, emphasizing a user-centric approach to create digital products that are visually appealing, intuitive, and provide a positive overall experience. This involves thoughtful consideration of layout, interactive elements, and understanding user needs to ensure usability, efficiency, and user satisfaction in the design and development of digital interfaces."
         }
     ]
      const requiresDAta =

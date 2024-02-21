@@ -1,12 +1,12 @@
 .skills {
   width: 100vw;
-  height: 1000px;
+  height: 1440px;
   overflow: hidden;
   position: relative;
 }
 .skills .home-video video {
   width: 100vw;
-  height: 929px;
+  height: 1600px;
 }
 .skills > div {
   position: absolute;
@@ -69,14 +69,10 @@
   margin: 0 auto;
   color: #000000;
   margin-top: 13px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .skills > div > div:last-child .top-languages .li {
-  background-color: #FAFAFA;
-  border: 1px solid #707070;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -91,7 +87,6 @@
   width: 160px;
 }
 .skills > div > div:last-child .top-languages .li h2 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 20px;
@@ -157,7 +152,6 @@
     left: 40%;
   }
   .skills > div > div:last-child .TopLanguages .li {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 296px;
@@ -174,7 +168,6 @@
     font-size: 37px;
   }
   .skills > div > div:last-child .DesignTools .li {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 225px;
@@ -192,10 +185,8 @@
   }
   .skills > div > div:last-child .OtherLiabries {
     position: absolute;
-    margin-top: -3%;
   }
   .skills > div > div:last-child .OtherLiabries .li {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 236px;

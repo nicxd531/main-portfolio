@@ -1,9 +1,10 @@
 import {Twirl as Hamburger} from "hamburger-react"
 import { useState } from "react";
 const NavBar = ({onScroll}) => {
+    // navbar main component
     const [isOpen, setOpen] = useState(false)
     return ( 
-        <section  className={`navBar ${isOpen?"nav-firstchild-open" : "nav-firstchild-close"} ${onScroll?"nav-firstchild-open" : null}`} >
+        <section style={{zIndex:1200}} className={`navBar ${isOpen?"nav-firstchild-open" : "nav-firstchild-close"} ${onScroll?"nav-firstchild-open" : null}`} >
             <div>
             <h1>portfolio</h1>
             <Hamburger toggled={isOpen} toggle={setOpen}/>
@@ -15,6 +16,7 @@ const NavBar = ({onScroll}) => {
                 <a href="#servicesNav">services</a>
                 <a href="#projectNav">projects</a>
                 <a href="#contactNav">contact</a>
+                <a href="https://olaolasunkanmi.hashnode.dev/">blog</a>
             </div>
         </section>
      );

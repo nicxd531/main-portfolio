@@ -78,27 +78,27 @@ const EachProjectFrontEnd  = () => {
                     <Divider   sx={{height:"70px",display:{lg:"none"},width:"100%",mt:1}}/>
                 <Box sx={{width:{xs:"80%",lg:"58%"},}}>
                     <Box className="scroll" sx={{height:"300px",width:{xs:"130%",lg:"100%"},overflow:"auto"}}>
-                        <Typography variant="h4" sx={{fontWeight:"bold"}}>{title}</Typography>
+                        <Typography variant="h4" sx={{fontWeight:"bold",mt:{xs:1},fontSize:{xs:"20px",lg:"26px"}}}>{title}</Typography>
                         <Box >
-                            <Typography sx={{textAlign:"justify"}}>{description1}</Typography>
-                            <Typography sx={{textAlign:"justify",mt:1}}>{description2}</Typography>
-                            <Box sx={{ml:3}}>
-                            <ul style={{marginTop:"5px"}}>
-                            <li style={{fontWeight:"bold",fontSize:"12px",textDecoration:"none"}}>Benefits</li>
-                               { benefits.map((data,index)=>{
-                                return(
-                                    <li key={index} style={{fontSize:"12px",textDecoration:"none"}}>{data}</li>
-                                )
-                               })}
-                            </ul>
-                            <ul style={{marginTop:"5px"}}>
-                                <li style={{fontWeight:"bold",fontSize:"12px",textDecoration:"none"}}>Special features</li>
-                                { features.map((data,index)=>{
-                                return(
-                                    <li key={index} style={{fontSize:"12px",textDecoration:"none"}}>{data}</li>
-                                )
-                               })}
-                            </ul>
+                            <Typography sx={{textAlign:"justify",fontSize:{xs:"0.85rem",lg:"1rem"}}}>{description1}</Typography>
+                            <Typography sx={{textAlign:"justify",mt:1,fontSize:{xs:"0.85rem",lg:"1rem"}}}>{description2}</Typography>
+                            <Box sx={{ml:3,fontSize:{xs:"0.85rem",lg:"1rem"}}}>
+                                <ul style={{marginTop:"5px"}}>
+                                    <Typography style={{fontWeight:"bold",fontSize:"12px",listStyle:"none"}}>Benefits</Typography>
+                                    { benefits.map((data,index)=>{
+                                        return(
+                                            <Typography component="li" key={index} sx={{fontSize:{xs:"0.85rem",lg:"1rem"}}}>{data}</Typography>
+                                        )
+                                    })}
+                                </ul>
+                                <ul style={{marginTop:"5px"}}>
+                                    <Typography style={{fontWeight:"bold",fontSize:"12px",listStyle:"none"}}>Special features</Typography>
+                                    { features.map((data,index)=>{
+                                    return(
+                                        <Typography component="li" key={index}  sx={{fontSize:{xs:"0.85rem",lg:"1rem"}}}>{data}</Typography>
+                                    )
+                                })}
+                                </ul>
                             </Box>
                         </Box>
                     </Box>

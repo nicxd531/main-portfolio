@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 const WhoAmI = () => {
     // who am i main component
     return ( 
@@ -16,24 +18,24 @@ const WhoAmI = () => {
                     Hi i am a software developer from Lagos,Nigeria
                 </p>
                 <p>
-                I am a highly skilled and experienced software developer based in Lagos, Nigeria, with a passion for innovation and a dedication to delivering exceptional results in the field of software development. With a focus on leveraging cutting-edge technologies and frameworks, I specialize in crafting robust and scalable solutions that drive business growth and exceed client expectations.
+                    I am a highly skilled and experienced software developer based in Lagos, Nigeria, with a passion for innovation and a dedication to delivering exceptional results in the field of software development. With a focus on leveraging cutting-edge technologies and frameworks, I specialize in crafting robust and scalable solutions that drive business growth and exceed client expectations.
                 </p>
                 <p>
-                My expertise lies in utilizing React.js, HTML, CSS, and JavaScript to develop dynamic and immersive software applications. By staying abreast of industry trends and continuously enhancing my skills, I ensure that every project is executed with precision and delivers maximum impact.
+                    My expertise lies in utilizing React.js, HTML, CSS, and JavaScript to develop dynamic and immersive software applications. By staying abreast of industry trends and continuously enhancing my skills, I ensure that every project is executed with precision and delivers maximum impact.
                 </p>
                 <p>With a collaborative approach and a commitment to excellence, I offer a range of services tailored to meet the unique needs of each client. From custom software development to ongoing maintenance and support, I am dedicated to helping businesses thrive in today's competitive landscape.</p>
                 <p>Here's a glimpse of the services I offer:</p>
-                <ul>
-                <li> 🔹 Custom software development using React, HTML, CSS, and JavaScript.</li>
-                <li> 🔹 Agile development methodologies for efficient project delivery.</li>
-                <li>🔹 Expertise in crafting robust and scalable software applications.</li>
-                <li> 🔹 Ongoing skills enhancement to stay ahead in the rapidly evolving software development landscape.</li>
-                <li> 🔹 Collaborative approach with open communication to align with client objectives.</li>
-                <li> 🔹 Maintenance, support, and optimization services for long-term success.</li>
-                </ul>
+                <p style={{textDecoration:"none"}}>
+                    <li>Custom software development using React, HTML, CSS, and JavaScript.</li>
+                    <li>Agile development methodologies for efficient project delivery.</li>
+                    <li>Expertise in crafting robust and scalable software applications.</li>
+                    <li>Ongoing skills enhancement to stay ahead in the rapidly evolving software development landscape.</li>
+                    <li>Collaborative approach with open communication to align with client objectives.</li>
+                    <li>Maintenance, support, and optimization services for long-term success.</li>
+                </p>
                 <p >-Custom website development using the latest technologies and frameworks such as React, HTML, CSS, and JavaScript.</p>
                 <p>
-                    <ul>
+                    <ul style={{textDecoration:"none"}}>
                         <li>✢ Mobile-first design and development to ensure optimal user experience on all devices.</li>
                         <li>✢ Innovative problem-solving and cutting-edge solutions to meet the unique needs of each client.</li>
                         <li>✢ Expertise in creating visually stunning and highly functional websites.</li>

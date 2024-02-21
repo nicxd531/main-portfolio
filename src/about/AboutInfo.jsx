@@ -12,7 +12,7 @@ const AboutInfo = () => {
         <h2>email: finixd531@gmail.com</h2>
         <h2>profile: front-end developer</h2>
         <h2>phone: +234 808 8629 8113</h2>
-        <Divider sx={{width:"100%",mt:3,ml:0}} variant="inset" />
+        <Divider sx={{width:{xs:"90%",lg:"100%"},mt:3,mx:4}} variant="inset" />
     </div> 
     );
 }

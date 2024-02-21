@@ -5,6 +5,9 @@
     width: 100vw;
     box-sizing: border-box;
     padding-top: 30px;    
+    li{
+        text-decoration: "none";
+    }
     
     > div:first-child{
         height: 900px;

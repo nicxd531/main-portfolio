@@ -5,26 +5,26 @@ import WhoAmI from "./WhoAmI";
 
 const About = () => {
     // main about component
-    return ( 
+    return (
         <section className="about" id="Aboutnav">
             <div>
                 <div>
                     <h1>about me</h1>
-                    <hr/>  
+                    <hr />
                 </div>
-                <AboutImg/>
+                <AboutImg />
                 <AboutInfo
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
                 />
                 <WhoAmI
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
                 />
             </div>
 
         </section>
-     );
+    );
 }
- 
+
 export default About;

@@ -38,7 +38,6 @@ const EachProjectFrontEnd = () => {
         <Box sx={{ mt: 1, }}>
             {currentData && currentData.map((data, index) => {
                 const { title, description1, description2, link1, link2, image, stacks, benefits, features } = data
-                console.log(data)
                 return (
                     <Box key={index} sx={{ mt: { xs: 0, lg: 5 } }} data-aos="zoom-in" data-aos-duration="1000">
                         <Divider variant="inset" sx={{ margin: "auto" }} />
@@ -55,7 +54,6 @@ const EachProjectFrontEnd = () => {
                                     className="mySwiper"
                                 >
                                     {image && image.map((data, index) => {
-                                        console.log(data)
                                         return (
                                             <SwiperSlide key={index} ><img src={data} alt="image" /></SwiperSlide>
                                         )
@@ -66,7 +64,7 @@ const EachProjectFrontEnd = () => {
                                 <Box sx={{ mt: 1 }}>
                                     {stacks.map((data, index) => {
                                         return (
-                                            <Box sx={{ display: "inline" }}>
+                                            <Box  key={index} sx={{ display: "inline" }}>
                                                 <Chip label={data} size="small" sx={{ ml: { xs: 0.1, lg: 1 }, mb: { xs: 1 } }} />
                                             </Box>
                                         )

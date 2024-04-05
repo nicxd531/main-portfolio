@@ -109,7 +109,7 @@
 }
 @media screen and (min-width: 1200px) {
   .services {
-    height: 772px;
+    height: 792px;
   }
   .services > div:first-child {
     width: -moz-fit-content;

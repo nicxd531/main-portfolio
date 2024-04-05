@@ -7,7 +7,7 @@ const MainInput = () => {
     return (
         <div className="main-input">
           <h3>message me</h3>
-          <form name="contact"   netlify>
+          <form name="contact"  netlify="true">
             <input 
             required
             name='name'

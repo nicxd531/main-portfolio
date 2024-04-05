@@ -6,7 +6,7 @@ const MainServices = () => {
         {
             image: "image/programming.png",
             title: "SOFTWARE DEVELOPMENT",
-            desc: "Software development is the systematic process of designing, coding, testing, and maintaining software systems to meet specific objectives or requirements. It involves a structured approach to creating computer programs or applications, encompassing various stages such as analysis, design, implementation, testing, and maintenance"
+            desc: "Software development is the systematic process of designing, coding, testing, and maintaining software systems to meet specific objectives or requirements. It involves a structured approach to creating computer programs or applications, encompassing various stages such as analysis, design, implementation."
         },
         {
             image: "image/app-development.png",

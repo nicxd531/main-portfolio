@@ -1,6 +1,7 @@
 import "../styles/Contact.css"
 import MainInput from "./MainInput";
 const Contact = () => {
+    // main contact component
     return ( 
         <div id="contactNav" className="contact">
             <div>

@@ -136,6 +136,8 @@
     .background{
         color: $text-colour-dark;
         transition: all ease-in 0.5s;
+        max-width: 1360px;
+        margin: 0 auto;
         .nav-firstchild-open{
             background-color:$background-colour-dark ;
             transition: all 0.5s ease-out; 

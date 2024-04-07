@@ -6,6 +6,8 @@ import { useState } from "react";
 import SkillTags from "./SkillsTags";
 
 const Skills = ({theme}) => {
+  // main skills component
+  // states for toggling 
   const [toggle, setToggle] = useState(false)
   const intro=toggle ?
     <SkillsAndExperience/>:

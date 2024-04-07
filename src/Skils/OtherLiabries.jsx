@@ -9,7 +9,6 @@ const OtherLiabries = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [screenSize, setScreenSize] = useState( window.innerWidth);
     const itemsPerPage = screenSize < 500 ? 4 :5; // Set the number of items per page
-    console.log(itemsPerPage)
 
     // main component foe other libraries 
     const frontend = [

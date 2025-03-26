@@ -1,13 +1,14 @@
 @import "./variables";
 .skills {
   width: 100vw;
-  // height: 150vh;
+  height: 1720px;
   overflow: hidden;
   position: relative;
   .home-video {
+    height: 1750px;
     video {
       width: 100vw;
-      height: 1600px;
+      height: 1680px;
     }
   }
   > div {
@@ -130,7 +131,7 @@
 }
 @media screen and (min-width: 992px) {
   .skills {
-    height: 900px;
+    height: 1000px;
     .home-video {
       video {
         height: 773px;

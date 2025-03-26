@@ -139,7 +139,7 @@ const OtherLiabries = () => {
 
     return (
         <>
-            <Paper sx={{ overflow: "hidden", width: "90%", margin: "auto", mt: 2, height: { xs: "920px", lg: "405px" }, p: { xs: 3, lg: 4 }, boxSizing: "border-box", display: "flex", flexDirection: { xs: "column", lg: "row" } }}>
+            <Paper sx={{ overflow: "hidden", width: "90%", margin: "auto", mt: 2, height: { xs: "1150px", lg: "405px" }, p: { xs: 3, lg: 4 }, boxSizing: "border-box", display: "flex", flexDirection: { xs: "column", lg: "row" } }}>
                 <Box sx={{ width: "33%", display: "flex", flexDirection: "column" }}>
                     <Box sx={{ width: { xs: "300px", lg: "100%" } }}>
                         <Divider variant="inset" sx={{ margin: "auto" }}>
@@ -173,7 +173,7 @@ const OtherLiabries = () => {
                     </Box>
                 </Box>
             </Paper>
-            <Box >
+            <Box sx={{ mt: 2 }}>
                 <Pg totalPages={totalPages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </Box>
         </>

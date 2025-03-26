@@ -1,11 +1,15 @@
 .skills {
   width: 100vw;
+  height: 1720px;
   overflow: hidden;
   position: relative;
 }
+.skills .home-video {
+  height: 1750px;
+}
 .skills .home-video video {
   width: 100vw;
-  height: 1600px;
+  height: 1680px;
 }
 .skills > div {
   position: absolute;
@@ -117,7 +121,7 @@
 
 @media screen and (min-width: 992px) {
   .skills {
-    height: 900px;
+    height: 1000px;
   }
   .skills .home-video video {
     height: 773px;

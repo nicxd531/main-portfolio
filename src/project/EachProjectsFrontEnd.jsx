@@ -23,6 +23,14 @@ const EachProjectFrontEnd = () => {
             disableOnInteraction: false, // Continue autoplay even when user interacts
         },
     };
+    const scrollRef = useRef(null);
+
+    // Function to enable smooth touch scrolling
+    const handleTouchScroll = (e) => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollLeft -= e.deltaY; // Moves horizontally instead of vertically
+        }
+    };
 
     // states for current page 
     const [currentPage, setCurrentPage] = useState(1);
@@ -60,11 +68,28 @@ const EachProjectFrontEnd = () => {
                                     })}
 
                                 </Swiper>
-                                <Divider variant="inset" sx={{ margin: "auto" }} />
-                                <Box sx={{ mt: 1 }}>
+                                <Divider variant="inset" />
+                                <Box
+                                    ref={scrollRef}
+                                    sx={{
+                                        display: "flex",
+                                        overflowX: "scroll",
+                                        whiteSpace: "nowrap",
+                                        gap: 2,
+                                        py: 3,
+                                        width: "100%",
+                                        maxWidth: "100vw",
+                                        scrollbarWidth: "none", // Hide scrollbar for Firefox
+                                        "&::-webkit-scrollbar": {
+                                            display: "none", // Hide scrollbar for Chrome/Safari
+                                        },
+                                        "-webkit-overflow-scrolling": "touch", // Enable smooth touch scrolling
+                                    }}
+                                    onWheel={handleTouchScroll} // Allow smooth horizontal scrolling
+                                >
                                     {stacks.map((data, index) => {
                                         return (
-                                            <Box  key={index} sx={{ display: "inline" }}>
+                                            <Box key={index} sx={{ display: "inline" }}>
                                                 <Chip label={data} size="small" sx={{ ml: { xs: 0.1, lg: 1 }, mb: { xs: 1 } }} />
                                             </Box>
                                         )
@@ -89,7 +114,7 @@ const EachProjectFrontEnd = () => {
                                                     )
                                                 })}
                                             </ul>
-                                            <ul style={{ marginTop: "5px" }}>
+                                            <ul style={{ marginTop: "5px", }}>
                                                 <Typography style={{ fontWeight: "bold", fontSize: "12px", listStyle: "none" }}>Special features</Typography>
                                                 {features.map((data, index) => {
                                                     return (
@@ -100,11 +125,11 @@ const EachProjectFrontEnd = () => {
                                         </Box>
                                     </Box>
                                 </Box>
-                                <Box sx={{ display: { xs: "none", lg: "flex" }, justifyContent: { xs: "center", lg: "flex-end" }, width: "100%", mt: { xs: 2, lg: 1 }, textAlign: "center" }}>
-                                    <Button href={link1} variant="contained" startIcon={<LaptopIcon />}>
+                                <Box sx={{ display: { xs: "none", lg: "flex" }, justifyContent: { xs: "center", lg: "flex-end" }, width: "100%", mt: { xs: 2, lg: 1 }, textAlign: "center", pr: { xs: 1, lg: 4 } }}>
+                                    <Button target="_blank" component="a" href={link1} variant="contained" startIcon={<LaptopIcon />}>
                                         LIVE-DEMO
                                     </Button>
-                                    <Button href={link2} sx={{ ml: 1 }} variant="contained" endIcon={<GitHubIcon />}>
+                                    <Button target="_blank" component="a" href={link2} sx={{ ml: 1 }} variant="contained" endIcon={<GitHubIcon />}>
                                         GITHUB
                                     </Button>
                                 </Box>

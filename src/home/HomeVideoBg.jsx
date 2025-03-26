@@ -1,5 +1,5 @@
 const HomeVideoBg = ({ theme, darkMode, lightMode }) => {
-    // home video backround component
+    // home video background component
     return (
         <div>
             {theme === "dark" ?

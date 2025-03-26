@@ -177,7 +177,8 @@
   .Home .navBar .menu a:hover::after {
     width: 50%;
   }
-  .Home .navBar .menu a:hover, .Home .navBar .menu a:focus {
+  .Home .navBar .menu a:hover,
+  .Home .navBar .menu a:focus {
     color: #FBCA49;
     transition: all 0.3s ease-out;
   }

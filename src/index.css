@@ -17,3 +17,8 @@ h3 {
   color: inherit;
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}

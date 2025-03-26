@@ -6,7 +6,7 @@ const Intro = () => {
     // useState hook for taking in fetched greetings
     const [greeting, setGreeting] = useState('');
     // array list of skills which is then feed to react tytping effect for display 
-    const list = [" Fullstack Software Developer", "Redux", "React", "Bootstrap", "Javascript", "Tailwind", "Html", "CSS", "Material UI 🧉", "Firebase 🔥", "Figma", "Framer Motion", "Next Js", "Typescript", "MongoDB", "Mongoose", "Node Js", "Express"]
+    const list = ["  Software Developer", "Redux", "React", "Bootstrap", "Javascript", "Tailwind", "Html", "CSS", "Material UI 🧉", "Firebase 🔥", "Figma", "Framer Motion", "Next Js", "Typescript", "MongoDB", "Mongoose", "Node Js", "Express","React Native","React Query"]
     // useEffect hook for fetching the data and storing it in greetings and also reinvocking the fetchGreeting method 
     useEffect(() => {
         const fetchGreeting = async () => {

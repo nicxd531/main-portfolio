@@ -1,14 +1,14 @@
 import { Box, Paper, Typography, Divider, Chip } from "@mui/material";
 import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import InsetList from "./InsetList";
 import Pg from "./Pg";
 
 const OtherLiabries = () => {
     // states for current page 
     const [currentPage, setCurrentPage] = useState(1);
-    const [screenSize, setScreenSize] = useState( window.innerWidth);
-    const itemsPerPage = screenSize < 500 ? 4 :5; // Set the number of items per page
+    const [screenSize, setScreenSize] = useState(window.innerWidth);
+    const itemsPerPage = screenSize < 500 ? 4 : 5; // Set the number of items per page
 
     // main component foe other libraries 
     const frontend = [
@@ -139,7 +139,7 @@ const OtherLiabries = () => {
 
     return (
         <>
-            <Paper sx={{overflow:"hidden", width: "90%", margin: "auto", mt: 2, height: { xs: "920px", lg: "380px" }, p: {xs:3,lg:4}, boxSizing: "border-box", display: "flex", flexDirection: { xs: "column", lg: "row" } }}>
+            <Paper sx={{ overflow: "hidden", width: "90%", margin: "auto", mt: 2, height: { xs: "920px", lg: "405px" }, p: { xs: 3, lg: 4 }, boxSizing: "border-box", display: "flex", flexDirection: { xs: "column", lg: "row" } }}>
                 <Box sx={{ width: "33%", display: "flex", flexDirection: "column" }}>
                     <Box sx={{ width: { xs: "300px", lg: "100%" } }}>
                         <Divider variant="inset" sx={{ margin: "auto" }}>

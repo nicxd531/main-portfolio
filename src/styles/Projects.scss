@@ -1,13 +1,65 @@
 @import "./variables";
+.scroll::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 5px;
+}
 
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the scrollbar thumb on hover */
+  border-radius: 5px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-logo{
+  font-size: 30px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  transform: rotate(-90deg);
+  width: fit-content;
+  position: absolute;
+  left:-60px;
+  top: 45%;
+  display: inline-block;
+}
 .projects{
     width: 100vw;
-    height: 776px;
+    height: 1550px;
     overflow: hidden;
     position: relative;
    .home-video{
     width: 100vw;
-      height: 776px;
+      height: 1550px;
       object-fit: cover;
      } 
      .project-content{
@@ -15,18 +67,18 @@
       height: 100%;
       width: 100%;
       top: 0;
-      >div:first-child{
+      .introd{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 38px;
+        margin-top: 28px;
         >h1{
           font-size: $font-size-20px;
           text-transform: uppercase;
         }
         >hr{
-          width: 63px;
+          width: 100px;
           border: 1.5px solid $primary-colour;
           background-color: $primary-colour;
           border-radius: $border-radius-md;
@@ -36,9 +88,7 @@
       }
       >div:last-child{
         position: relative;
-        width: 100%;
-        height: 678px;
-        >h1{
+        .project-logo{
           font-size: 40px;
           text-transform: uppercase;
           -webkit-text-fill-color: transparent;
@@ -46,7 +96,7 @@
           transform: rotate(-90deg);
           width: fit-content;
           position: absolute;
-          left:-100px;
+          left:-86px;
           top: 45%;
           display: inline-block;
         }
@@ -249,6 +299,7 @@
 }
 @media screen and (min-width:414px) {
   .projects{
+    height: 1500px;
     .project-content{
       > div:last-child{
         .each-projects{
@@ -277,19 +328,23 @@
   }
 }
 @media screen and (min-width:992px) {
+  .project-logo{
+    font-size: 60px;
+    left:-90px;
+  }
   .projects{
     height: 1040px;
     .home-video{
       height: 1040px;
     }
     .project-content{
-      >div:first-child{
+      .introd{
         h1{
           font-size: $font-size-32px;
-          margin-top: 71px;
+  
         }
         hr{
-          width: 100px;
+          width: 170px;
           border: 2px solid $primary-colour;
           margin-left: 49%;
         }

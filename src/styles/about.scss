@@ -1,13 +1,16 @@
 @import "./variables";
 
 .about{
-    height: 857px;
+    height: 950px;
     width: 100vw;
     box-sizing: border-box;
     padding-top: 30px;    
+    li{
+        text-decoration: "none";
+    }
     
     > div:first-child{
-        height: 767px;
+        height: 900px;
         width: 335px;
         margin:auto ;
         border-radius: $border-radius-md;
@@ -67,7 +70,7 @@
         align-items: center;
         margin-top: 26px;
         h2{
-        font-size: $font-size-16px;
+        font-size: $font-size-14px;
         margin-top: 16px;
         font-weight: normal;
         text-transform: capitalize;
@@ -80,12 +83,12 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-top: 61px;
+        margin-top: 20px;
             > h2{
-                font-size: $font-size-24px
+                font-size: $font-size-16px
             }
             > hr{
-                width: 76px;
+                width: 50px;
                 margin: 0;
                 background-color: $primary-colour;
                 border: 2px solid $primary-colour;
@@ -93,15 +96,37 @@
                 border-radius: $border-radius-md;
             }
         }
+        > div:last-child::-webkit-scrollbar {
+            width: 3px; /* Width of the scrollbar */
+            background-color: #f1f1f1;
+            border-radius: 3px;
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: #888; /* Color of the scrollbar thumb */
+            border-radius: 5px;
+          }
+          
+          ::-webkit-scrollbar-track {
+            background-color: #f1f1f1; /* Color of the scrollbar track */
+            border-radius: 5px;
+          }
+          
+          ::-webkit-scrollbar-thumb:hover {
+            background-color: #555; /* Color of the scrollbar thumb on hover */
+            border-radius: 5px;
+          }
         > div:last-child{
             padding: 8px;
             text-align: center;
             margin-bottom: 23px;
+            height: 280px;
+            
             p{
                 margin-top: 8px;
                 font-weight: normal;
                 font-size: $font-size-12px;
                 padding: 2px;
+                text-align: justify;
             }
         }
     }
@@ -109,12 +134,12 @@
 @media screen and (min-width:992px) {
     .about{
         > div:first-child{
-            width: 1127px ;
+            min-width: 1127px ;
             height: 687px ;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            padding: 56px 79px;
+            padding: 40px 60px;
            > div:first-child,
             .about-img,
             .about-info{
@@ -163,10 +188,10 @@
                 width: 100%;
                 display: inline-block;
                 grid-column: span 7;
-                margin-top: 50px;
+                margin-top: 20px;
 
                 h2{
-                font-size: 22px;
+                font-size: 18px;
                 display: inline-block;
                 width: 50%;
                 }
@@ -182,20 +207,21 @@
                }
                >div{
                >h2{
-                font-size: 48px;
+                font-size: 30px;
                 margin: 0;
                }
                hr{
-                width: 143px;
-                margin-left: 54px;
-            }
+                width: 180px;
+                margin-left: 74px;
+             }
                >p{
-                font-size: 18px;
+                font-size: 14px;
                 margin-top: 20px;
                }
             }
                >div:last-child{
                 text-align: left;
+                height: 200px;
                }
             }
         }

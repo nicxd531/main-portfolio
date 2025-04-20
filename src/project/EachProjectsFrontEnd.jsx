@@ -73,7 +73,7 @@ const EachProjectFrontEnd = () => {
                                     ref={scrollRef}
                                     sx={{
                                         display: "flex",
-                                        overflowX: "scroll",
+                                        overflowX: "auto",
                                         whiteSpace: "nowrap",
                                         gap: 2,
                                         py: 3,

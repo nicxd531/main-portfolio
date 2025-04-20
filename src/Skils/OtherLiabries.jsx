@@ -25,6 +25,10 @@ const OtherLiabries = () => {
             "title": "CSS",
         },
         {
+            "image": "image/react-query-removebg-preview.png",
+            "title": "React Query",
+        },
+        {
             "image": "image/redux.png",
             "title": "REDUX",
         },

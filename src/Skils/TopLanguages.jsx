@@ -26,13 +26,21 @@ const TopLanguages = () => {
             "image": "image/nextjs.png",
             "title": "Next js",
             "description": " Next.js is a popular React framework that enables developers to build server-rendered React applications with ease. It provides features like server-side rendering (SSR), static site generation (SSG), and client-side routing, among others"
-
         },
         {
             "image": "image/react.png",
             "title": "REACT",
             "description": "React is a JavaScript library for building user interfaces. It was developed by Facebook, and is often used for building single-page applications and mobile applications."
-
+        },
+        {
+            "image": "image/react-native (2).png",
+            "title": "React Native",
+            "description": "React Native is an open-source framework developed by Meta (Facebook) for building cross-platform mobile applications using JavaScript and React. It allows developers to write a single codebase that runs on both iOS and Android, providing a native-like performance."
+        },
+        {
+            "image": "image/flutter-flow.png",
+            "title": "Flutter Flow",
+            "description": "FlutterFlow is a no-code/low-code development platform that allows users to build mobile and web applications using Google's Flutter framework. It provides a drag-and-drop interface for designing UI components and integrates with Firebase, APIs, and backend services to enable full app functionality without requiring deep coding knowledge. "
         }
     ]
 
@@ -44,7 +52,7 @@ const TopLanguages = () => {
                 data-aos-delay="300"
                 className="li d-flex justify-content-center align-items-center " key={index} layout="true" onClick={() => setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
                 <h2>{data.title}</h2>
-                <Avatar sx={{ ml: 3 }} src={data.image} alt="language image" variant="rounded" />
+                <Avatar sx={{ ml: { xs: 2, lg: 3 } }} src={data.image} alt="language image" variant="rounded" />
                 <AnimatePresence>
                     {isOpen === index && <motion.div
                         className="content"

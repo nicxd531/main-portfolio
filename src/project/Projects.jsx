@@ -15,7 +15,7 @@ const Projects = ({ theme }) => {
                     <div className="introd">
                         <h1>SOFTWARE DEVELOPMENT</h1>
                         <hr />
-                        <Typography sx={{ fontSize: { xs: "0.75rem", lg: "1rem" } }}>this section contains projects developed with diffrent stack with their explanation and aso indicating their usage and benefits</Typography>
+                        <Typography sx={{ fontSize: { xs: "0.75rem", lg: "1rem" } }}>This section contains projects developed with different stacks with their explanation and aso indicating their usage and benefits</Typography>
                     </div>
                     <div>
                         <EachProjectFrontEnd />

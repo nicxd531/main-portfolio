@@ -18,11 +18,9 @@ const WhoAmI = () => {
                     Fullstack Software Developer from Lagos,Nigeria
                 </p>
                 <p>
-                    I am a highly skilled and experienced software developer based in Lagos, Nigeria, with a passion for innovation and a dedication to delivering exceptional results in the field of software development. With a focus on leveraging cutting-edge technologies and frameworks, I specialize in crafting robust and scalable solutions that drive business growth and exceed client and employers expectations.
+                    I'm a solution-driven Software Developer passionate about problem-solving, innovation, and continuous growth. I specialize in full-stack development, building scalable applications, optimizing digital workflows, and enhancing user experiences. With experience in React, Next.js,React Native, Node.js,Express.js and MongoDB, I develop efficient, high-performance solutions. Committed to refining my skills, I embrace creativity, adaptability, and critical thinking to drive impactful software solutions.
                 </p>
-                <p>
-                    My expertise lies in utilizing React.js, HTML, CSS, JavaScript, typescript, next.js, mongo db, express and node.js to develop dynamic and immersive software applications. By staying abreast of industry trends and continuously enhancing my skills, I ensure that every project is executed with precision and delivers maximum impact.
-                </p>
+
                 <p>With a collaborative approach and a commitment to excellence, I offer a range of services tailored to meet the unique needs of each client and employer. From custom software development to ongoing maintenance and support, I am dedicated to helping businesses thrive in today's competitive landscape.</p>
                 <p>Here's a glimpse of the services I offer:</p>
                 <p style={{ textDecoration: "none" }}>
@@ -38,7 +36,7 @@ const WhoAmI = () => {
                 </p>
                 <p >Core Professional Competencies</p>
                 <p>
-                    <ul style={{ textDecoration: "none",fontSize:{xs:"1rem"} }}>
+                    <ul style={{ textDecoration: "none", fontSize: { xs: "1rem" } }}>
                         <li>✢ Mobile-first design and development to ensure optimal user experience on all devices.</li>
                         <li>✢ Innovative problem-solving and cutting-edge solutions to meet the unique needs of each client.</li>
                         <li>✢ Expertise in creating visually stunning and highly functional websites.</li>
@@ -50,7 +48,7 @@ const WhoAmI = () => {
                         <li>✢ Accessibility for all users.</li>
                         <li>✢ Integration with various platforms and technologies.</li>
                         <li>✢ Developing interactive and dynamic user interfaces.</li>
-                        <li>✢ Analytical thinking and strategic problemsolving</li>
+                        <li>✢ Analytical thinking and strategic problem solving</li>
                         <li>✢ Effective verbal and written communication</li>
                         <li>✢ Agile learning and quick adaptation to new technologies</li>
                         <li>✢ Creative and innovative approach to challenges</li>

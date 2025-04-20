@@ -1,12 +1,15 @@
 .skills {
   width: 100vw;
-  height: 1000px;
+  height: 1720px;
   overflow: hidden;
   position: relative;
 }
+.skills .home-video {
+  height: 1750px;
+}
 .skills .home-video video {
   width: 100vw;
-  height: 929px;
+  height: 1680px;
 }
 .skills > div {
   position: absolute;
@@ -69,14 +72,10 @@
   margin: 0 auto;
   color: #000000;
   margin-top: 13px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .skills > div > div:last-child .top-languages .li {
-  background-color: #FAFAFA;
-  border: 1px solid #707070;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -91,7 +90,6 @@
   width: 160px;
 }
 .skills > div > div:last-child .top-languages .li h2 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 20px;
@@ -123,7 +121,7 @@
 
 @media screen and (min-width: 992px) {
   .skills {
-    height: 773px;
+    height: 1000px;
   }
   .skills .home-video video {
     height: 773px;
@@ -145,7 +143,9 @@
     margin-left: 180px;
     margin: 0;
   }
-  .skills > div .TopLanguages, .skills > div .DesignTools, .skills > div .OtherLiabries {
+  .skills > div .TopLanguages,
+  .skills > div .DesignTools,
+  .skills > div .OtherLiabries {
     width: 634px;
     display: inline-block;
     margin: 0;
@@ -157,7 +157,6 @@
     left: 40%;
   }
   .skills > div > div:last-child .TopLanguages .li {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 296px;
@@ -174,7 +173,6 @@
     font-size: 37px;
   }
   .skills > div > div:last-child .DesignTools .li {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 225px;
@@ -192,10 +190,8 @@
   }
   .skills > div > div:last-child .OtherLiabries {
     position: absolute;
-    margin-top: -3%;
   }
   .skills > div > div:last-child .OtherLiabries .li {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 236px;

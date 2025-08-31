@@ -7,7 +7,7 @@ const AboutImg = () => {
             className="about-img">
             <div></div>
             <div>
-                <img src="/image/user.user.jpeg" alt="profiile picture" />
+                <img src="/image/user.jpeg" alt="profile picture" />
             </div>
         </div>
     );

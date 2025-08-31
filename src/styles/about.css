@@ -57,6 +57,8 @@
 .about > div:first-child .about-img div:last-child img {
   width: 120%;
   height: 120%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .about .about-info {
   display: flex;

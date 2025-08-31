@@ -5,7 +5,7 @@
 }
 .contact > div {
   width: 333px;
-  height: 572px;
+  height: 582px;
   margin: 0 auto;
   border-radius: 8px;
 }
@@ -95,7 +95,7 @@
   display: inline-block;
 }
 .contact > div .main-input > div > div:first-child {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 .contact > div .main-input > div > div:first-child > h3 {
   font-size: 0.875rem;
@@ -112,7 +112,7 @@
 }
 .contact > div .main-input > div > p {
   font-size: 0.75rem;
-  margin-top: 24.5px;
+  margin-top: 15px;
 }
 .contact > div .main-input > div > div:nth-child(3),
 .contact > div .main-input > div > div:nth-child(4),
@@ -135,6 +135,9 @@
 .contact > div .main-input > div > div:nth-child(6) h3 {
   font-size: 0.875rem;
   margin-left: 2px;
+}
+.contact > div .main-input > div > div:nth-child(6) {
+  margin-bottom: 20px;
 }
 .contact h2 {
   font-size: 0.75rem;
@@ -211,9 +214,9 @@
     font-size: 1.125rem;
   }
   .contact > div .main-input > div > div:nth-child(3) h3,
-.contact > div .main-input > div > div:nth-child(4) h3,
-.contact > div .main-input > div > div:nth-child(5) h3,
-.contact > div .main-input > div > div:nth-child(6) h3 {
+  .contact > div .main-input > div > div:nth-child(4) h3,
+  .contact > div .main-input > div > div:nth-child(5) h3,
+  .contact > div .main-input > div > div:nth-child(6) h3 {
     font-size: 1.125rem;
     margin-left: 8px;
   }

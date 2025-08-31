@@ -76,14 +76,12 @@
 }
 @media screen and (min-width: 992px) {
   .services {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
   .services > div:first-child {
     width: 90%;
     margin: auto;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -111,10 +109,9 @@
 }
 @media screen and (min-width: 1200px) {
   .services {
-    height: 772px;
+    height: 792px;
   }
   .services > div:first-child {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     grid-column: span 12;
@@ -127,7 +124,6 @@
     margin-left: 65px;
   }
   .services > div:first-child .main-services {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }

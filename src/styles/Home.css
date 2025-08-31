@@ -19,7 +19,7 @@
 .Home .navBar {
   grid-column: span 12;
   position: fixed;
-  width: 100%;
+  width: 100vw;
 }
 .Home .navBar .nav-firstchild-close {
   background-color: transparent;
@@ -90,8 +90,7 @@
   margin-right: 19px;
 }
 .Home .socials * {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
   cursor: pointer;
 }
 .Home .scroll-down {
@@ -103,7 +102,7 @@
   flex-direction: column;
   height: 80px;
   bottom: 0;
-  left: 45%;
+  left: 38%;
 }
 .Home .scroll-down hr {
   width: 72px;
@@ -141,7 +140,6 @@
     padding-bottom: 24px;
   }
   .Home .navBar div:first-child h1 {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     text-transform: capitalize;
@@ -153,7 +151,6 @@
   .Home .navBar .menu {
     display: flex;
     flex-direction: row;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     grid-column: 1/span 6;
@@ -180,10 +177,12 @@
   .Home .navBar .menu a:hover::after {
     width: 50%;
   }
-  .Home .navBar .menu a:hover, .Home .navBar .menu a:focus {
+  .Home .navBar .menu a:hover,
+  .Home .navBar .menu a:focus {
     color: #FBCA49;
+    transition: all 0.3s ease-out;
   }
-  .Home .navBar .menu a:focus::after {
+  .Home .navBar .menu a:focus:active::after {
     width: 50%;
   }
   .Home .intro {
@@ -222,6 +221,8 @@
     grid-column: span 1;
     grid-row: 1/span 2;
     width: 40px;
+    display: flex;
+    flex-direction: column;
   }
   .Home .intro .socials > * {
     margin-top: 2px;

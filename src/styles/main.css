@@ -2,6 +2,7 @@
                 light mode
 ======================================*/
 .light .background {
+  overflow: hidden;
   color: #000001;
   transition: all ease-in 0.5s;
 }
@@ -84,12 +85,6 @@
   margin-left: 20px;
   color: #FBFBFB;
 }
-.light .background .contact > div .main-input input:-ms-input-placeholder {
-  font-size: 0.75rem;
-  text-transform: capitalize;
-  margin-left: 20px;
-  color: #FBFBFB;
-}
 .light .background .contact > div .main-input input::placeholder {
   font-size: 0.75rem;
   text-transform: capitalize;
@@ -97,12 +92,6 @@
   color: #FBFBFB;
 }
 .light .background .contact > div .main-input textarea::-moz-placeholder {
-  font-size: 0.75rem;
-  text-transform: capitalize;
-  margin-left: 20px;
-  color: #FBFBFB;
-}
-.light .background .contact > div .main-input textarea:-ms-input-placeholder {
   font-size: 0.75rem;
   text-transform: capitalize;
   margin-left: 20px;
@@ -132,6 +121,7 @@
 .dark .background {
   color: #E8EDDF;
   transition: all ease-in 0.5s;
+  margin: 0 auto;
 }
 .dark .background .nav-firstchild-open {
   background-color: #000000;
@@ -218,12 +208,6 @@
   margin-left: 20px;
   color: #FBFBFB;
 }
-.dark .background .contact > div .main-input input:-ms-input-placeholder {
-  font-size: 0.75rem;
-  text-transform: capitalize;
-  margin-left: 20px;
-  color: #FBFBFB;
-}
 .dark .background .contact > div .main-input input::placeholder {
   font-size: 0.75rem;
   text-transform: capitalize;
@@ -231,12 +215,6 @@
   color: #FBFBFB;
 }
 .dark .background .contact > div .main-input textarea::-moz-placeholder {
-  font-size: 0.75rem;
-  text-transform: capitalize;
-  margin-left: 20px;
-  color: #FBFBFB;
-}
-.dark .background .contact > div .main-input textarea:-ms-input-placeholder {
   font-size: 0.75rem;
   text-transform: capitalize;
   margin-left: 20px;
@@ -261,16 +239,10 @@
   .dark .background .contact > div input::-moz-placeholder {
     font-size: 1.125rem;
   }
-  .dark .background .contact > div input:-ms-input-placeholder {
-    font-size: 1.125rem;
-  }
   .dark .background .contact > div input::placeholder {
     font-size: 1.125rem;
   }
   .dark .background .contact > div textarea::-moz-placeholder {
-    font-size: 1.125rem;
-  }
-  .dark .background .contact > div textarea:-ms-input-placeholder {
     font-size: 1.125rem;
   }
   .dark .background .contact > div textarea::placeholder {

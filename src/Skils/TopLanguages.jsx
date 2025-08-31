@@ -1,70 +1,80 @@
+import { Avatar, Paper } from "@mui/material";
 import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 
+
 const TopLanguages = () => {
+    // main TopLanguages component
+    // states for opening each tags 
     const [isOpen, setIsOpen] = useState(false);
-    console.log(isOpen)
-    const list =[
+
+    const list = [
         {
-            "image":"image/html.png",
-            "title":"HTML",
-            "description":"HTML (HyperText Markup Language) is a markup language used to structure content on the web. It consists of a series of elements, or tags, which are used to describe the content and layout of a webpage."
+            "image": "image/typescript.png",
+            "title": "Typescript",
+            "description": "TypeScript is a statically typed superset of JavaScript that adds optional types to the language. It is designed for large-scale JavaScript applications, providing developers with tools for building robust and maintainable code. TypeScript's type system helps catch errors at compile time and improves code readability and maintainability."
 
         },
         {
-            "image":"image/javascript.png",
-            "title":"JAVASCRIPT",
-            "description":"JavaScript is used to add interactivity to websites by allowing the webpage to respond to user actions such as clicks, scrolls, and form input. It can also be used to manipulate the HTML and CSS on a webpage, making it an essential tool for web developers."
+            "image": "image/javascript.png",
+            "title": "JAVASCRIPT",
+            "description": "JavaScript is used to add interactivity to websites by allowing the webpage to respond to user actions such as clicks, scrolls, and form input. It can also be used to manipulate the HTML and CSS on a webpage, making it an essential tool for web developers."
 
         },
         {
-            "image":"image/css.png",
-            "title":"CSS",
-            "description":"CSS (Cascading Style Sheets) is a stylesheet language used to describe the appearance and layout of a document written in HTML. CSS is used to control the style of a webpage, including the font, color, and layout."
-
+            "image": "image/nextjs.png",
+            "title": "Next js",
+            "description": " Next.js is a popular React framework that enables developers to build server-rendered React applications with ease. It provides features like server-side rendering (SSR), static site generation (SSG), and client-side routing, among others"
         },
         {
-            "image":"image/react.png",
-            "title":"REACT",
-            "description":"eact is a JavaScript library for building user interfaces. It was developed by Facebook, and is often used for building single-page applications and mobile applications."
-
+            "image": "image/react.png",
+            "title": "REACT",
+            "description": "React is a JavaScript library for building user interfaces. It was developed by Facebook, and is often used for building single-page applications and mobile applications."
+        },
+        {
+            "image": "image/react-native (2).png",
+            "title": "React Native",
+            "description": "React Native is an open-source framework developed by Meta (Facebook) for building cross-platform mobile applications using JavaScript and React. It allows developers to write a single codebase that runs on both iOS and Android, providing a native-like performance."
+        },
+        {
+            "image": "image/flutter-flow.png",
+            "title": "Flutter Flow",
+            "description": "FlutterFlow is a no-code/low-code development platform that allows users to build mobile and web applications using Google's Flutter framework. It provides a drag-and-drop interface for designing UI components and integrates with Firebase, APIs, and backend services to enable full app functionality without requiring deep coding knowledge. "
         }
     ]
-   
-    const main = list.map((data ,index)=>{
-        return(
-            <motion.div
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-delay="300" 
-            className="li " key={index} layout onClick={()=>setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
-                <motion.div className="avatar" layout ><img src={data.image} alt={data.title}/></motion.div>
+
+    const main = list.map((data, index) => {
+        return (
+            <Paper
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="300"
+                className="li d-flex justify-content-center align-items-center " key={index} layout="true" onClick={() => setIsOpen(index === isOpen ? false : index)} initial={{ borderRadius: 10 }}>
                 <h2>{data.title}</h2>
+                <Avatar sx={{ ml: { xs: 2, lg: 3 } }} src={data.image} alt="language image" variant="rounded" />
                 <AnimatePresence>
-                    {isOpen===index && <motion.div
+                    {isOpen === index && <motion.div
                         className="content"
                         layout
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                     >
-                     <p> {data.description}</p>
+                        <p> {data.description}</p>
                     </motion.div>}
                 </AnimatePresence>
-             </motion.div>
+            </Paper>
         )
     })
-    return ( 
+    return (
         <div className="top-languages TopLanguages">
-            <h2>Top Languages</h2>
-            <LayoutGroup>
-                <motion.div className="ul grid" layout >
-                    {main}
-                </motion.div>
-            </LayoutGroup>
+            <h2>Top Stacks</h2>
+            <motion.div className="ul grid" layout >
+                {main}
+            </motion.div>
         </div>
-     );
+    );
 }
- 
+
 export default TopLanguages;

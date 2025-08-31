@@ -1,38 +1,28 @@
+import { Paper, Typography } from "@mui/material";
 import HomeVideoBg from "../home/HomeVideoBg";
 import "../styles/Projects.css"
-import EachProjectFrontEnd from "./EachProjectsFrontEnd";
-import EachProjectsWebDesign from "./EachProjectsWebDesign";
 import { useState } from "react";
+import EachProjectFrontEnd from "./EachProjectsFrontEnd";
 
-const Projects = ({theme}) => {
-    const [ projectSwitch, setProjectSwitch] = useState(false)
-    
-    return ( 
+const Projects = ({ theme }) => {
+    // main project component
+    return (
         <section id="projectNav" className="projects">
-            <HomeVideoBg lightMode={"/video/light-mode-project-video.mp4"} darkMode={"/video/dark-mode-project-video.mp4"} theme={theme}/>
-            <div className="project-content">
-                <div>
-                    { projectSwitch ? <h1>Web design's</h1> : <h1>frontend</h1>}
-                    <hr/>
-                </div>
-                <div>
-                    <h1>portfolio's</h1>
-                    <div className="each-projects">
-                        <EachProjectFrontEnd  projectSwitch={projectSwitch} />
-                        <EachProjectsWebDesign  projectSwitch={projectSwitch}/>
-                        <div className="circled-dots-project">
-                            <div>
-                                <div onClick={()=>setProjectSwitch(false)} className={`${projectSwitch ?"project-dot-false" :"project-dot-true"}`}></div>
-                                <div onClick={()=>setProjectSwitch(true)} className={`${projectSwitch ? "project-dot-true" : "project-dot-false"}`}></div>
-                            </div>
-                        </div>
-                        
+            <HomeVideoBg lightMode={"/video/light-mode-project-video.mp4"} darkMode={"/video/dark-mode-project-video.mp4"} theme={theme} />
+            <h1 className="project-logo">project's</h1>
+            <div className="project-content" style={{ width: "100%" }}>
+                <Paper sx={{ width: "80%", margin: "auto", height: { xs: "987", lg: "95%" }, p: 2, boxSizing: "border-box", mt: 3 }}>
+                    <div className="introd">
+                        <h1>SOFTWARE DEVELOPMENT</h1>
+                        <hr />
+                        <Typography sx={{ fontSize: { xs: "0.75rem", lg: "1rem" } }}>This section contains projects developed with different stacks with their explanation and aso indicating their usage and benefits</Typography>
                     </div>
-                    
-                </div>
+                    <div>
+                        <EachProjectFrontEnd />
+                    </div>
+                </Paper>
             </div>
         </section>
-     );
+    );
 }
- 
 export default Projects;
